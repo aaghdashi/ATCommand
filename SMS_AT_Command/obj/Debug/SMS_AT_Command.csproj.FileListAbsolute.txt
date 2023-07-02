@@ -1,0 +1,26 @@
+c:\users\arman'\documents\visual studio 2013\Projects\SMS_AT_Command\SMS_AT_Command\bin\Debug\SMS_AT_Command.exe.config
+C:\Users\arman'\Documents\Visual Studio 2013\Projects\SMS_AT_Command\SMS_AT_Command\bin\Debug\SMS_AT_Command.exe
+C:\Users\arman'\Documents\Visual Studio 2013\Projects\SMS_AT_Command\SMS_AT_Command\bin\Debug\SMS_AT_Command.pdb
+C:\Users\arman'\Documents\Visual Studio 2013\Projects\SMS_AT_Command\SMS_AT_Command\obj\Debug\SMS_AT_Command.csprojResolveAssemblyReference.cache
+C:\Users\arman'\Documents\Visual Studio 2013\Projects\SMS_AT_Command\SMS_AT_Command\obj\Debug\SMS_AT_Command.Properties.Resources.resources
+C:\Users\arman'\Documents\Visual Studio 2013\Projects\SMS_AT_Command\SMS_AT_Command\obj\Debug\SMS_AT_Command.SMS.resources
+C:\Users\arman'\Documents\Visual Studio 2013\Projects\SMS_AT_Command\SMS_AT_Command\obj\Debug\SMS_AT_Command.csproj.GenerateResource.Cache
+C:\Users\arman'\Documents\Visual Studio 2013\Projects\SMS_AT_Command\SMS_AT_Command\obj\Debug\SMS_AT_Command.exe
+C:\Users\arman'\Documents\Visual Studio 2013\Projects\SMS_AT_Command\SMS_AT_Command\obj\Debug\SMS_AT_Command.pdb
+C:\Users\arman'\Documents\Visual Studio 2013\Projects\SMS_AT_Command\SMS_AT_Command\bin\Debug\EntityFramework.dll
+C:\Users\arman'\Documents\Visual Studio 2013\Projects\SMS_AT_Command\SMS_AT_Command\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\arman'\Documents\Visual Studio 2013\Projects\SMS_AT_Command\SMS_AT_Command\bin\Debug\EntityFramework.xml
+C:\Users\arman'\Documents\Visual Studio 2013\Projects\SMS_AT_Command\SMS_AT_Command\bin\Debug\EntityFramework.SqlServer.xml
+D:\Arman\project\SMS_AT_Command\SMS_AT_Command\bin\Debug\SMS_AT_Command.exe.config
+D:\Arman\project\SMS_AT_Command\SMS_AT_Command\obj\Debug\SMS_AT_Command.exe
+D:\Arman\project\SMS_AT_Command\SMS_AT_Command\obj\Debug\SMS_AT_Command.pdb
+D:\Arman\project\SMS_AT_Command\SMS_AT_Command\bin\Debug\SMS_AT_Command.exe
+D:\Arman\project\SMS_AT_Command\SMS_AT_Command\bin\Debug\SMS_AT_Command.pdb
+D:\Arman\project\SMS_AT_Command\SMS_AT_Command\bin\Debug\EntityFramework.dll
+D:\Arman\project\SMS_AT_Command\SMS_AT_Command\bin\Debug\EntityFramework.SqlServer.dll
+D:\Arman\project\SMS_AT_Command\SMS_AT_Command\bin\Debug\EntityFramework.xml
+D:\Arman\project\SMS_AT_Command\SMS_AT_Command\bin\Debug\EntityFramework.SqlServer.xml
+D:\Arman\project\SMS_AT_Command\SMS_AT_Command\obj\Debug\SMS_AT_Command.csprojResolveAssemblyReference.cache
+D:\Arman\project\SMS_AT_Command\SMS_AT_Command\obj\Debug\SMS_AT_Command.Properties.Resources.resources
+D:\Arman\project\SMS_AT_Command\SMS_AT_Command\obj\Debug\SMS_AT_Command.SMS.resources
+D:\Arman\project\SMS_AT_Command\SMS_AT_Command\obj\Debug\SMS_AT_Command.csproj.GenerateResource.Cache

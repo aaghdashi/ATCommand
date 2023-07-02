@@ -1,0 +1,397 @@
+#binpress-store-listing *, #binpress-store-listing div, #binpress-store-listing h3, #binpress-store-listing a, #binpress-store-listing ul, #binpress-store-listing li, #binpress-store-listing ul li,#binpress-store-listing div ul, #binpress-store-listing img, #binpress-store-listing p, #binpress-store-listing span {
+	border:0; padding:0;margin:0; float:none; text-align: inherit; background:transparent; position:static;
+}
+#binpress-store-listing .listing ul, #binpress-store-listing .listing ul li {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#binpress-store-listing .listing .applink {
+	position:absolute;
+	bottom: 10px;
+	right: 10px;
+	background-color:#ffffff;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	font:bold 12px/14pt Arial;
+	-webkit-box-shadow:inset 1px 1px 1px #c9c9c9;
+	-moz-box-shadow:inset 1px 1px 1px #c9c9c9;
+	box-shadow:inset 1px 1px 1px #c9c9c9;
+	clear:left;
+	text-decoration: none;
+}
+#binpress-store-listing .listing .applink:hover {
+	text-decoration: none;
+}
+#binpress-store-listing .listing .applink em {
+	border:1px solid #d57e48;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+	background-color:#f9cb4d;
+	background: -webkit-gradient(linear, left top, left bottom, from(#efe356), to(#faa628));
+	background: -moz-linear-gradient(top,  #efe356,  #faa628);
+	background: -o-linear-gradient(#efe356,#faa628);
+	color:#813206;
+	text-shadow:0 1px 1px #fff;
+	text-transform: uppercase;
+	padding:5px 16px;
+	position:relative;
+	right:-2px;
+	font-style:normal;
+	top:-1px;
+}
+
+#binpress-store-listing .listing .applink:hover em {
+	background-color:#ffcc4e;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f7eb59), to(#ffae35));
+	background: -moz-linear-gradient(top,  #f7eb59,  #ffae35);
+	background: -o-linear-gradient(#f7eb59,#ffae35);
+	color:#a33d08;
+}
+
+#binpress-store-listing .listing .applink span {
+	color:#873506;
+	font-size:13px;
+	display:inline-block;
+	padding:3px 0px 2px 8px;
+}
+
+#binpress-store-listing .listing .applink:hover span {
+	color:#a33d08;
+}
+#binpress-store-listing .listing .thumb {
+	float:left;
+	margin-right:10px;
+}
+#binpress-store-listing .listing .app {
+	float:left;
+	background-color:#f6f6f6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#f2f2f2));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #f2f2f2);
+	background: -o-linear-gradient(#fbfbfb,#f2f2f2);
+	margin:0 1.8% 18px;
+	position:relative;
+	width:46%;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #c7c7c7;
+    text-align: left;
+}
+#binpress-store-listing .listing .app .app-padding {
+    padding:12px;
+    min-height:122px;
+}
+#binpress-store-listing .listing .ellipsis {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	-o-text-overflow: ellipsis;
+    -ms-text-overflow: ellipsis;
+}
+
+#binpress-store-listing .listing .featured {
+	background:url(../../images/apps/featured-badge.png) 0 0 no-repeat;
+	width:106px;
+	height:35px;
+	bottom:-3px;
+	left:-2px;
+	position:absolute;
+	z-index:10;
+}
+#binpress-store-listing .listing .app p {
+	font:10pt/1.2em Arial;
+    margin: 2px 15px 0px 0;
+	color:#787878;
+	overflow:hidden;
+	height:64px;
+	position:relative;
+	padding:0;
+}
+#binpress-store-listing .listing .app .thumb img {
+	float:left;
+	margin:0;
+	box-shadow:0 1px 2px #d1d1d1;
+	height:64px;
+	width:64px;
+	position:relative;
+	z-index:2;
+}
+
+#binpress-store-listing .listing .app h3 {
+	font:bold 16px/16pt Arial;
+	margin:0 40px 5px 0;
+	text-shadow:0 1px 1px #fff;
+	overflow:hidden;
+}
+#binpress-store-listing .listing .app h3 a {
+	text-decoration:none;
+	color:#2c506f;
+}
+#binpress-store-listing .listing .app .corner {
+	position:absolute;
+	right:-5px;
+	z-index:1;
+	top:-5px;
+}
+#binpress-store-listing .listing .app .corner a {
+	display: block;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+    height: 24px;
+    width: 39px;
+    position: relative;
+    padding: 0 7px;
+    background:url(../../images/apps/languages.png) 7px -677px no-repeat;
+    background-color: #D8E3E8;
+	border: 1px solid #c7c7c7;
+	webkit-box-shadow: 0 1px 1px #FFFFFF inset;
+	  -moz-box-shadow: 0 1px 1px #FFFFFF inset;
+	      box-shadow: 0 1px 1px #FFFFFF inset;    
+}
+#binpress-store-listing .listing .app .corner .php {
+	background-position: 8px 4px;
+}
+#binpress-store-listing .listing .app .corner .c {
+	background-position: 8 -43px;
+}
+#binpress-store-listing .listing .app .corner .csharp {
+	background-position: 4px -95px;
+}
+#binpress-store-listing .listing .app .corner .objective-c {
+	background-position: 7px -144px;
+}
+#binpress-store-listing .listing .app .corner .actionscript {
+	background-position: 7px -195px;
+}
+#binpress-store-listing .listing .app .corner .javascript {
+	background-position: 7px -246px;
+}
+#binpress-store-listing .listing .app .corner .python {
+	background-position: 7px -354px;
+}
+#binpress-store-listing .listing .app .corner .java {
+	background-position: 4px -458px;
+}
+#binpress-store-listing .listing .app .corner .vbnet {
+	background-position: 8px -574px;
+}
+#binpress-store-listing .listing .app .corner .ruby {
+	background-position: 8px -624px;
+}
+#binpress-store-listing .listing .app .corner .lua {
+	background-position: 8px -732px;
+}
+#binpress-store-listing .listing .app .rating {
+	float:left;
+	width: 80px;
+	margin-left: -3px;
+	clear:left;
+}
+#binpress-store-listing .listing .app .rating ul li {
+	background:url(../../images/jqrating/stars-white.png) center -91px no-repeat;
+	height:14px;	
+	width:15px;
+	margin: 0;
+}
+#binpress-store-listing .listing .app .rating ul .icon-star {
+	background-position: center -127px;
+	list-style: none;
+}
+#binpress-store-listing .listing .app .rating ul .icon-half-star {
+	background-position: center -146px;
+}
+#binpress-store-listing .listing .app .rating ul .empty {
+	background-position: center -91px;
+}
+/** Pagination **/
+#binpress-store-listing .listing .pagination a,#binpress-store-listing .listing .pagination .pagingCurrent {
+	text-decoration: none;
+	padding:3px 8px 4px;
+	margin:0 2px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px 3px 3px 3px;
+	font-weight:bold;
+	zoom:1;
+	* padding:5px 8px 4px;
+	color:#717171;
+	background-color: #F9F9F9;
+	border: 1px solid #C9C9C9;
+	moz-box-shadow: 0 1px 1px #E5E5E5;
+	webkit-box-shadow: 0 1px 1px #E5E5E5;
+	box-shadow: 0 1px 1px #E5E5E5;
+}
+#binpress-store-listing .listing .pagination a:hover {
+	text-decoration:none;
+	background-color:#FFF;
+	color:#717171;
+}
+#binpress-store-listing .listing .pagination .pagingCurrent {
+	color:#FFF;
+	background-color:#646464;
+}
+#binpress-store-listing .listing .pagination .pagingCurrent:hover {
+	color:#FFF;
+	background-color:#646464;
+}
+#binpress-store-listing .listing .pagination .loading img {
+	margin-bottom:-3px;
+}
+#binpress-store-listing .listing .pagination .loading {
+	padding:3px 4px 4px 5px;
+	background:transparent;
+}
+#binpress-store-listing .listing .pagination {
+	background-color:#f6f6f6;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#f2f2f2));
+	background: -moz-linear-gradient(top,  #fbfbfb,  #f2f2f2);
+	background: -o-linear-gradient(#fbfbfb,#f2f2f2);
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #c7c7c7;
+	padding:10px 5px;
+	text-align:center;
+	height:20px;
+	clear:left;
+}
+#binpress-store-listing .listing .pagination {
+	background:none;
+	border:none;
+	border-radius:none;
+	
+}
+/** Sorting filters **/
+#binpress-store-listing .listing .preface {
+	height:29px;
+	border-bottom:1px solid #a6a6a6;
+	padding-bottom:10px;
+}
+#binpress-store-listing .listing .components {
+	padding-top:10px;
+	border-top:1px solid #fff;
+}
+#binpress-store-listing .listing .components .round4px {
+	-moz-border-radius:4px 4px 4px 4px;
+	-webkit-border-radius:4px 4px 4px 4px;
+	border-radius:4px 4px 4px 4px;
+}
+#binpress-store-listing .listing .sorting {
+	float:right;
+}
+#binpress-store-listing .listing .sorting .droparea {
+	display:inline-block;
+	position:relative;
+}
+#binpress-store-listing .listing .sorting b {
+	font-style:italic;
+	height: 17px;
+    padding: 3px 5px;
+    position: absolute;
+    right: 5px;
+    top: 2px;
+    width: 10px;
+    z-index: 5;
+	border-left:1px solid #9db1c7;
+}
+#binpress-store-listing .listing .sorting ul {
+	font:bold 12px/14pt Arial;
+	display:none;
+	position:absolute;
+	top:26px;
+	padding:5px 0;
+	width:136px;
+	left:0;
+	-moz-border-radius:0 0px 4px 4px;
+	-webkit-border-radius:0 0px 4px 4px;
+	border-radius:0 0px 4px 4px;
+	background:#c8e5ec;
+	
+	z-index:5;
+	border:1px solid #9db1c7;
+	border-top:0;
+}
+#binpress-store-listing .listing .sorting .title {
+	font:bold 10pt/14pt verdana;
+	font-style: normal;
+	position:relative;
+	z-index:2;
+	white-space:nowrap;
+	padding-right:15px;
+	background:#c8e5ec;
+	background:-webkit-gradient(linear, left top, left bottom, from(#f4fafb), to(#c8e5ec));
+	background: -moz-linear-gradient(top,  #f4fafb,  #c8e5ec);
+	background: -o-linear-gradient(#f4fafb,#c8e5ec);
+	border:1px solid #9db1c7;
+	padding:5px 15px 5px 7px;
+	 -moz-border-radius:4px 4px 4px 4px;
+	-webkit-border-radius:4px 4px 4px 4px;
+	border-radius:4px 4px 4px 4px;
+	color:#373d46;
+	font-weight:bold;
+	display:inline-block;
+	width:114px;
+}
+#binpress-store-listing .listing .sorting .title .loading {
+	margin-bottom:-3px;
+}
+#binpress-store-listing .listing .sorting .droparea:hover ul {
+	display: block;
+}
+#binpress-store-listing .listing .sorting .droparea:hover .title {
+	border-bottom:0;
+	-moz-border-radius:4px 4px 0 0;
+	-webkit-border-radius:4px 4px 0 0;
+	border-radius:4px 4px 0 0;
+}
+#binpress-store-listing .listing .sorting ul li,#binpress-store-listing .listing .sorting ul a {
+	font:normal 10pt/14pt Verdana;
+	text-decoration: none;
+	display:block;
+	text-align: left;
+	white-space:nowrap;
+	line-height:26px;
+	height:26px;
+	color:#373d46;
+}
+#binpress-store-listing .listing .sorting ul li a {
+	padding:0 5px;
+}
+#binpress-store-listing .listing .sorting ul a:hover {
+	background-color:#f0f8f9;
+	text-decoration: none;
+}
+/** Rating stars **/
+#binpress-store-listing .listing .rating {
+	margin-top:10px;
+	overflow:auto;
+}
+#binpress-store-listing .listing .rating ul {
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+#binpress-store-listing .listing .rating li {
+	float:left;
+	height:20px;
+	margin:0 4px 0 0;
+	background:url(../../images/jqrating/stars-white.png) 0 0 no-repeat;
+	width:20px;
+}
+#binpress-store-listing .listing .rating .on {
+	background-position: 0 -46px;
+}
+#binpress-store-listing .listing .rating .halfstar {
+	background-position: 0 -71px;
+}
+#binpress-store-listing .listing .rating span {
+	font-size: 9pt;
+	text-align:center;
+	color: #FFF;
+	clear:both;
+}
+#binpress-store-listing .listing .binpress-loader {
+	text-align: center;
+}

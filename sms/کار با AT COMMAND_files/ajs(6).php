@@ -1,0 +1,3 @@
+var OX_a6bb4969 = '';
+OX_a6bb4969 += "<"+"img src=\'http://ads.barnamenevis.org/www/images/398afad4998c777c1b463514d282eaed.gif\' width=\'468\' height=\'60\' alt=\'\' title=\'\' border=\'0\' /><"+"div id=\'beacon_b2fdca5fc5\' style=\'position: absolute; left: 0px; top: 0px; visibility: hidden;\'><"+"img src=\'http://ads.barnamenevis.org/www/delivery/lg.php?bannerid=95&amp;campaignid=70&amp;zoneid=9&amp;loc=http%3A%2F%2Fbarnamenevis.org%2Fimages%2Fbanners%2Fbelow_navbar_zone_7.html&amp;referer=http%3A%2F%2Fbarnamenevis.org%2Fshowthread.php%3F217892-%25DA%25A9%25D8%25A7%25D8%25B1-%25D8%25A8%25D8%25A7-AT-COMMAND&amp;cb=b2fdca5fc5\' width=\'0\' height=\'0\' alt=\'\' style=\'width: 0px; height: 0px;\' /><"+"/div>\n";
+document.write(OX_a6bb4969);

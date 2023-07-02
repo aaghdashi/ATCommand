@@ -1,0 +1,2529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0046)http://www.hamkelasy.com/content/view/1660/42/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; utf-8">
+	<title>پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C</title>
+<meta name="title" content="کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C">
+<meta name="author" content="امیر جبلی">
+<meta name="description" content="مفاله های کامپیوتر عمران مکانیک فناوری اطلاعات طراحی صنعتی معماری مقالات دانشجویی شهر سازی پزشکی برق الکترونیک ادبیات نجوم ستاره شناسی 
+کارشناسی ارشد منابع آزمون ارشد تحصیلات تکمیلی">
+<meta name="keywords" content="مقاله مقالات علم علمی دانش دانشگاه ایران articles article ایران فارسی iran maghale farsi نمونه سوالات امتحانی  معرفی رشته های دانشگاهی  زندگی  منابع کارشناسی ارشد رشته های ارشد آزمون ارشد تحصیلان تکمیلی دانشگاه دانشجو تحقیق مقاله مقالات نامه بزرگان علم و ادب معرفی سایت">
+<meta name="Generator" content="Joomla! - Copyright (C) 2005 - 2007 Open Source Matters. All rights reserved.">
+<meta name="robots" content="index, follow">
+<!-- JW AJAX Vote Plugin v1.0 starts here -->		
+<link href="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/ajaxvote.php" rel="stylesheet" type="text/css">	
+<script type="text/javascript">
+	var live_site = 'http://www.hamkelasy.com';
+	var jwajaxvote_lang = new Array();
+	jwajaxvote_lang['UPDATING'] = 'در حال بروز رساني...!';
+	jwajaxvote_lang['THANKS'] = 'از اظهار نظر شما سپاس گذاريم';
+	jwajaxvote_lang['ALREADY_VOTE'] = 'شما قبلا به اين موضوع راي داده ايد!';
+	jwajaxvote_lang['VOTES'] = ':مجموع راي ها';
+	jwajaxvote_lang['VOTE'] = 'راي';
+</script>
+<script type="text/javascript" src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/ajaxvote(1).php"></script>
+<!-- JW AJAX Vote Plugin v1.0 ends here -->
+<!--<base href="http://www.hamkelasy.com/">--><base href=".">
+	<link rel="shortcut icon" href="http://www.hamkelasy.com/images/favicon.ico">
+	  <meta name="designer" content="Template Design Workshop">
+  <meta name="designerUrl" content="http://skin.pictofx.com/">
+  <link rev="TDW" href="http://skin.pictofx.com/" title="Template Design Workshop">
+  <link href="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/template_css.css" rel="stylesheet" type="text/css">
+  </head>
+<body id="TDW_Body">
+	<table border="0" cellpadding="0" cellspacing="0" width="100%" height="100%">
+		<tbody><tr>
+			<td id="TDLL">&nbsp;</td>
+			<td id="TDL"><div id="TDLpic"></div></td>
+			<td id="TDM">
+				<table id="banner" border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tbody><tr>
+						<td id="banL">&nbsp;</td>
+						<td id="banM">
+							<table id="bannerTop" border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tbody><tr>
+									<td id="banTL"><div id="banTLpic"></div></td>
+									<td id="banTM">
+                  	                    	&nbsp;
+                                      </td>
+									<td id="banTR"><div id="banTRpic"></div></td>
+								</tr>
+							</tbody></table>
+							<table id="bannerDown" border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tbody><tr>
+									<td id="banDL"><div id="banDLpic"></div></td>
+									<td id="banDR">
+										<table id="menuTop" border="0" cellpadding="0" cellspacing="0">
+											<tbody><tr>
+												<td class="menuTR"><a id="bHome" href="http://hamkelasy.com/index.php"></a></td>
+												<td class="menuTR"><a id="bContact" href="http://www.hamkelasy.com/component/option,com_contact/task,view/contact_id,1/Itemid,3/"></a></td>
+												<td class="menuTR"><a id="bShop" href="http://www.hamkelasy.com/index.php?option=com_wrapper&Itemid=157"></a></td>
+												<td class="menuTR"><a id="bSearch" href="http://www.hamkelasy.com/index.php?option=com_hamsearchi"></a></td>
+												<td class="menuTR"><a id="bExchange" href="http://www.hamkelasy.com/component/option,com_weblinks/catid,45/Itemid,67/"></a></td>
+												<td class="menuTR"><a id="bAdv" href="http://www.hamkelasy.com/content/view/319/71/"></a></td>
+												<td class="menuTR"><a id="bForum" href="http://www.hamkelasy.com/component/option,com_fireboard/Itemid,91/"></a></td>
+												<td class="menuTR"><a id="bRSS" href="http://www.hamkelasy.com/#"></a></td>
+												<td id="menuTL">&nbsp;</td>
+											</tr>
+										</tbody></table>
+									</td>
+								</tr>
+							</tbody></table>
+						</td>
+						<td id="banR">&nbsp;</td>
+					</tr>
+				</tbody></table>
+				<div id="pathwayContainer"> <span class="pathway"><a href="http://www.hamkelasy.com/" class="pathway">صفحه اول سایت</a> <img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/arrow.png" border="0" alt="arrow"> <a href="http://www.hamkelasy.com/content/category/6/17/42/" class="pathway">کامپیوتر و فناوری اطلاعات</a> <img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/arrow.png" border="0" alt="arrow">   کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C </span></div>
+				<div style="height:1px; font-size:1px; line-height:1px; width:800px;"></div>
+				<table id="contentTable" border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tbody><tr>
+												<td id="sideRight">
+							<div class="sidebar">
+								<div class="sidebarHead">
+																		<div class="sidebarSearchHead">		<table cellpadding="0" cellspacing="0" class="moduletable">
+				<tbody><tr>
+			<td>
+				
+
+<form action="http://www.hamkelasy.com/index.php" id="searchbox_011247943651361626172:yhlftolm3mi" method="get">
+	<div class="search">
+		<input name="q" id="mod_search_searchword" maxlength="20" alt="search" class="inputbox" type="text" size="" value="جستجو در سایت ..." onblur="if(this.value==&#39;&#39;) this.value=&#39;جستجو در سایت ...&#39;;" onfocus="if(this.value==&#39;جستجو در سایت ...&#39;) this.value=&#39;&#39;;">	</div>
+	<input type="hidden" name="hl" value="fa">
+  	<input type="hidden" name="option" value="com_hamsearchi">
+  	<input type="hidden" name="cx" value="011247943651361626172:yhlftolm3mi">
+  	<input type="hidden" name="cof" value="FORID:9">
+</form>
+
+
+<!-- Google CSE Search Box Begins  -->
+<!--
+<form action="http://www.hamkelasy.com/index.php" id="searchbox_011247943651361626172:yhlftolm3mi">
+  <input type="hidden" name="hl" value="fa" />
+  <input type="hidden" name="option" value="com_hamsearchi" />
+  <input type="hidden" name="cx" value="011247943651361626172:yhlftolm3mi" />
+  <input type="hidden" name="cof" value="FORID:9" />
+  <input type="text" name="q" size="25" />
+  <input type="submit" name="sa" value="Search" />
+</form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=searchbox_011247943651361626172%3Ayhlftolm3mi&lang=en"></script>
+-->
+<!-- Google CSE Search Box Ends -->			</td>
+		</tr>
+		</tbody></table>
+		</div>
+																	</div>
+										<div class="module">
+			<div>
+				<div>
+					<div>
+						<h3>فهرست مقالات</h3>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr align="left"><td><a href="http://www.hamkelasy.com/component/option,com_frontpage/Itemid,1/" class="mainlevel">صفحه اول سایت</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/17/42/" class="mainlevel" id="active_menu">کامپیوتر و فناوری اطلاعات</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/54/74/" class="mainlevel">کنفرانس کامپیوتر</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/16/43/" class="mainlevel">عمران</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/75/110/" class="mainlevel">فنی و مهندسی</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/74/109/" class="mainlevel">علوم پایه</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/73/108/" class="mainlevel">علوم انسانی</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/77/112/" class="mainlevel">هنر و معماری</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/34/52/" class="mainlevel">شهر سازی</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/78/114/" class="mainlevel">نقشه برداری</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/76/111/" class="mainlevel">کشاورزی</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/18/41/" class="mainlevel">مکانیک</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/28/44/" class="mainlevel">معماری</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/19/40/" class="mainlevel">برق و الکترونیک</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/59/84/" class="mainlevel">مهندسی پزشکی</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/36/54/" class="mainlevel">طراحی صنعتی</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/48/68/" class="mainlevel">صنایع</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/58/80/" class="mainlevel">مدیریت</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/55/75/" class="mainlevel">جغرافیا</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/33/50/" class="mainlevel">فناوری نوین</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/21/49/" class="mainlevel">پزشکی</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/42/57/" class="mainlevel">مامایی</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/23/35/" class="mainlevel">ادبیات</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/22/34/" class="mainlevel">موسیقی</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/20/39/" class="mainlevel">اخترشناسی</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/27/37/" class="mainlevel">نمونه سوالات امتحانی</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/24/36/" class="mainlevel">معرفی رشته های دانشگاهی</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/25/33/" class="mainlevel">زندگی نامه بزرگان علم و ادب</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/6/26/32/" class="mainlevel">مطالب کوتاه</a></td></tr>
+</tbody></table>					</div>
+				</div>
+			</div>
+		</div>
+				<div class="module">
+			<div>
+				<div>
+					<div>
+						<h3>منوی سایت</h3>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr align="left"><td><a href="http://www.hamkelasy.com/content/view/5/56/" class="mainlevel">معرفی اعضای همکلاسی</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/component/option,com_weblinks/Itemid,23/" class="mainlevel">سایت های علمی</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/component/option,com_contact/Itemid,3/" class="mainlevel">تماس با ما</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/component/option,com_search/Itemid,5/" class="mainlevel">جستجو در سایت</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/view/342/64/" class="mainlevel">سلب مسئوليت</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/1/1/88/" class="mainlevel">اخبار همکلاسی</a></td></tr>
+</tbody></table>					</div>
+				</div>
+			</div>
+		</div>
+				<div class="module">
+			<div>
+				<div>
+					<div>
+						<h3>فرم ورود</h3>	<form action="http://www.hamkelasy.com/" method="post" name="login">
+	
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+	<tbody><tr>
+		<td>
+			<label for="mod_login_username">
+				نام كاربري			</label>
+			<br>
+			<input name="username" id="mod_login_username" type="text" class="inputbox" alt="username" size="10">
+			<br>
+			<label for="mod_login_password">
+				رمز عبور			</label>
+			<br>
+			<input type="password" id="mod_login_password" name="passwd" class="inputbox" size="10" alt="password">
+			<br>
+			<input type="checkbox" name="remember" id="mod_login_remember" class="inputbox" value="yes" alt="Remember Me">
+			<label for="mod_login_remember">
+				من را به خاطر بسپار			</label>
+			<br>
+			<input type="submit" name="Submit" class="button" value="ورود">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<a href="http://www.hamkelasy.com/component/option,com_registration/task,lostPassword/">
+				فراموش كردن رمز</a>
+		</td>
+	</tr>
+			<tr>
+			<td>
+				ثبت نام نكرده ايد؟				<a href="http://www.hamkelasy.com/component/option,com_registration/task,register/">
+					ثبت نام</a>
+			</td>
+		</tr>
+			</tbody></table>
+	
+	<input type="hidden" name="option" value="login">
+	<input type="hidden" name="op2" value="login">
+	<input type="hidden" name="lang" value="farsi">
+	<input type="hidden" name="return" value="http://www.hamkelasy.com/content/view/1660/42/">
+	<input type="hidden" name="message" value="0">
+	<input type="hidden" name="force_session" value="1">
+	<input type="hidden" name="ja5497de1288fd1d3984354b5d0367638" value="1">
+	</form>
+						</div>
+				</div>
+			</div>
+		</div>
+									</div>
+							<div class="sidebarFoot"></div>
+						</td>
+												<td id="middle">
+													<div id="topAdv">		<div class="moduletable">
+			<a href="http://www.mobiledaran.ir/detail.php?id3=16112&wid=14800" target="_blank" dir="rtl"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/3-0085-2.gif" width="468" height="60" border="0" alt="مودم بلوتوث کامپیوتر Bluetoth Modem"></a>		</div>
+				<div class="moduletable">
+			<script type="text/javascript" src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/saved_resource"></script><iframe src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/c.htm" height="60" width="468" frameborder="0" scrolling="no" style="background: #FFF url(http://static.anetwork.ir/img/loader.gif) no-repeat center;"></iframe>		</div>
+		</div>
+												<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody><tr>
+																												</tr>
+						</tbody></table>
+															<div class="moduletable">
+			<div style="overflow: hidden; font-size: 1px; color: #ffffff; height: 1px; cursor: default">
+<h1><a href="http://www.parsianshop.com/">فروشگاه تیتانیوم و نقره</a>فروشگاه زیورآلات پارسیان</h1>
+</div>
+<p style="text-align: right" class="MsoNormal" align="right">
+<span style="font-size: 9pt; font-family: Tahoma">- برای مشاهده تمام مقالات موجود در سایت و استفاده از تالار گفتمان لطفا با نام کاربری خود وارد شوید در صورتی که عضو نیستید</span><span style="font-size: 9pt; font-family: Tahoma"> </span><span style="font-size: 9pt; font-family: Tahoma"><a href="http://www.hamkelasy.com/component/option,com_registration/task,register/">&lt; <span>اینجا</span> &gt;</a> <span>کلیک کنید.</span></span>
+</p>
+		</div>
+				<div class="moduletable">
+							<h3>
+					آخرین محصولات فروشگاه				</h3>
+				<script language="JavaScript" type="text/javascript" src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/frotel-oc.php"></script><div style="width:350; height:200; background-color:#EEF3ED; border:#3C0 double 1px; font-size:8pt; font-family:Tahoma,sans-serif; margin:4px; padding:3; text-align:right;" dir="rtl"><a href="http://www.byst.ir/index.php?wid=14800" class="frotel" style="text-decoration:none;" dir="rtl" target="_blank"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/poolshomar-frotel-forotel-icon6.png" alt="1- از منزل و يا سركار به راحتي و ارزانتر خريد كنيد" align="absmiddle" border="0" vspace="3"> از منزل و يا سركار به راحتي و ارزانتر خريد كنيد</a><br><a href="http://www.aster-toner.ir/index.php?wid=14800" class="frotel" style="text-decoration:none;" dir="rtl" target="_blank"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/poolshomar-frotel-forotel-icon6.png" alt="2- جوهر مناسب برای انواع پرینتر ساخت ایران برای اولین بار !!؟" align="absmiddle" border="0" vspace="3"> جوهر مناسب برای انواع پرینتر ساخت ایران برای اولین بار !!؟</a><br></div>		</div>
+				<div class="moduletable">
+			<div style="text-align:center;">
+<script type="text/javascript" src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/saved_resource"></script><iframe src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/c.htm" height="60" width="468" frameborder="0" scrolling="no" style="background: #FFF url(http://static.anetwork.ir/img/loader.gif) no-repeat center;"></iframe>
+</div>		</div>
+															﻿<script language="JavaScript">
+function send_form(form_id)
+{
+	document.getElementById(form_id).submit();
+}
+</script>
+<style>
+hr{margin-top:5px;clear:both;}
+.link_pos{float:right;}
+.sub_bttn{padding-left:0px;padding-right:0px;padding-bottom:0px;padding-top:0px;border-width:0px;width:120px;height:18px;float:right;background-image:url(../../images/discuss.gif);background-color:#000000;}
+</style>				<table class="contentpaneopen">
+			<tbody><tr>
+								<td class="contentheading" width="100%">
+					کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C									</td>
+								<td align="right" width="100%" class="buttonheading">
+					<a href="http://www.hamkelasy.com/index2.php?option=com_content&task=view&id=1660&pop=1&page=0&Itemid=42" target="_blank" onclick="window.open(&#39;http://www.hamkelasy.com/index2.php?option=com_content&amp;task=view&amp;id=1660&amp;pop=1&amp;page=0&amp;Itemid=42&#39;,&#39;win2&#39;,&#39;status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no&#39;); return false;" title="چاپ">
+						<img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/printButton.png" alt="چاپ" name="چاپ" align="middle" border="0"></a>
+				</td>
+							<td align="right" width="100%" class="buttonheading">
+				<a href="http://www.hamkelasy.com/index2.php?option=com_content&task=emailform&id=1660&itemid=42" target="_blank" onclick="window.open(&#39;http://www.hamkelasy.com/index2.php?option=com_content&amp;task=emailform&amp;id=1660&amp;itemid=42&#39;,&#39;win2&#39;,&#39;status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=400,height=250,directories=no,location=no&#39;); return false;" title="ارسال برای دوستان">
+					<img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/emailButton.png" alt="ارسال برای دوستان" name="ارسال برای دوستان" align="middle" border="0"></a>
+			</td>
+						</tr>
+			</tbody></table>
+			
+
+<!-- JW AJAX Vote Plugin v1.0 starts here -->
+<div class="jwajaxvote-inline-rating">
+  <ul class="jwajaxvote-star-rating">
+    <li id="rating1660" class="current-rating" style="width:83.8%;"></li>
+    <li><a href="javascript:void(null)" onclick="javascript:jwAjaxVote(1660,1,88,21);" title="1 خارج از محدوده راي گيري 5" class="one-star">1</a></li>
+    <li><a href="javascript:void(null)" onclick="javascript:jwAjaxVote(1660,2,88,21);" title="2 خارج از محدوده راي گيري 5" class="two-stars">2</a></li>
+    <li><a href="javascript:void(null)" onclick="javascript:jwAjaxVote(1660,3,88,21);" title="3 خارج از محدوده راي گيري 5" class="three-stars">3</a></li>
+    <li><a href="javascript:void(null)" onclick="javascript:jwAjaxVote(1660,4,88,21);" title="4 خارج از محدوده راي گيري 5" class="four-stars">4</a></li>
+    <li><a href="javascript:void(null)" onclick="javascript:jwAjaxVote(1660,5,88,21);" title="5 خارج از محدوده راي گيري 5" class="five-stars">5</a></li>
+  </ul>
+  <div id="jwajaxvote1660" class="jwajaxvote-box">
+    (21 :مجموع راي ها)  </div>
+</div>
+<!-- JW AJAX Vote Plugin v1.0 ends here -->
+
+		<table class="contentpaneopen">
+					<tbody><tr>
+				<td width="70%" align="left" valign="top" colspan="2">
+					<span class="small">
+						 نوشته شده توسط آقای مهندس ملاک					</span>
+					&nbsp;&nbsp;
+				</td>
+			</tr>
+					<tr>
+			<td valign="top" colspan="2">
+				<div class="Section1" dir="rtl">
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<b><span style="font-size: 12pt"><span style="font-family: Tahoma"><a href="file:///home/amir/Desktop/ab/gsm/66-%20AT%20command.rar_FILES/s"><span dir="ltr"></span></a></span><a href="http://hamkelasy.com/files/3tier/06/GSM_AT.pdf" target="_self" title="دریافت مقاله با فرمت پی دی اف">دریافت مقاله با فرمت PDF</a> </span></b><a href="http://hamkelasy.com/files/3tier/06/GSM_AT.pdf" target="_self" title="دریافت مقاله با فرمت پی دی اف"><br>
+<b><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span></b></a> 
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<a href="http://hamkelasy.com/files/3tier/06/WaveCom.zip" target="_self" title="دریافت سورس کد یک برنامه نمونه نوشته شده برای ارسالل و دریافت اس ام اس"><b><span dir="ltr" style="font-family: Tahoma"><o:p>دانلود یک برنامه نمونه نوشته شده با این روش</o:p></span></b></a> 
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<b><span style="font-family: Tahoma" lang="FA">چکیده
+:<o:p></o:p></span></b>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span dir="ltr" style="font-family: Tahoma"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> (</span><span dir="ltr" style="font-family: Tahoma">Short Message Service</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>) یا سرویس
+پیام کوتاه ،
+به موفقیت
+عظیمی در جهان
+بی سیم رسیده
+است. هرروز میلیون
+ها پیام
+کوتاه<span>&nbsp; </span>فرستاده
+می شود. اکنون پیام
+کوتاه به یک
+تولید کننده
+عظیم درآمد
+برای حاملان
+بی سیم تبدیل
+شده است. ایده
+فرستادن پیام
+های کوتاه بسیار
+ساده است. یک
+پیام روی تلفن
+موبایلتان می
+نویسید،
+شماره تلفن
+موبایل
+مقصدتان را
+وارد می کنید،
+دکمه </span><span dir="ltr" style="font-family: Tahoma">Send</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+را می فشارید
+و پیام خیلی
+زود توسط
+گیرنده قابل
+دسترس خواهد
+بود. <o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA">در
+این مقاله ما
+در مورد
+دستورات </span><span dir="ltr" style="font-family: Tahoma">AT</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+، کاربرد آن
+در </span><span dir="ltr" style="font-family: Tahoma">GSM MODEM</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> ها (به
+طور خاص در
+مورد ارسال و
+دریافت پیام
+کوتاه) و
+چگونگی
+استفاده از
+این دستورات در
+</span><span dir="ltr" style="font-family: Tahoma">C#</span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span> <span lang="FA">را مورد
+بحث قرار
+خواهیم داد .<o:p></o:p></span></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA"><o:p>&nbsp;&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<b><span style="font-family: Tahoma" lang="FA">فهرست
+مطالب : <o:p></o:p></span></b>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<b><span style="font-family: Tahoma" lang="FA"><o:p>&nbsp;</o:p></span></b>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 27pt; text-align: justify; text-indent: -18pt">
+<!--[if !supportLists]--><span style="font-family: Tahoma"><span>1.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal; font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span dir="rtl"><span style="font-family: Tahoma" lang="FA">مقدمه ای
+بر پیام های
+کوتاه<span>&nbsp; </span></span></span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 27pt; text-align: justify; text-indent: -18pt">
+<!--[if !supportLists]--><span style="font-family: Tahoma"><span>2.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal; font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span dir="rtl"><span style="font-family: Tahoma" lang="FA">چگونگی
+دریافت پیام
+های کوتاه<span>&nbsp; </span>با
+استفاده از یک
+کامپیوتر </span></span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 27pt; text-align: justify; text-indent: -18pt">
+<!--[if !supportLists]--><span style="font-family: Tahoma"><span>3.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal; font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span dir="rtl"><span style="font-family: Tahoma" lang="FA">ارسال پیام
+های کوتاه<span>&nbsp; </span>از کامپیوتر
+به تلفن همراه</span></span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 27pt; text-align: justify; text-indent: -18pt">
+<!--[if !supportLists]--><span style="font-family: Tahoma"><span>4.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal; font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span dir="rtl"><span style="font-family: Tahoma" lang="FA">چگونگی
+استفاده از </span></span><span dir="ltr" style="font-family: Tahoma">AT COMMAND</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> در </span><span dir="ltr" style="font-family: Tahoma">C#</span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span> </span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 27pt; text-align: justify; text-indent: -18pt">
+<!--[if !supportLists]--><span style="font-family: Tahoma"><span>5.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal; font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span dir="rtl"><span style="font-family: Tahoma" lang="FA">منابع و
+مآخذ<o:p></o:p></span></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<b><span style="font-family: Tahoma" lang="FA"><o:p>&nbsp;</o:p></span></b>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<b><span style="font-family: Tahoma" lang="FA">مقدمه
+ای بر پیام
+های کوتاه<span>&nbsp; </span></span></b><b><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span></b>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA">1-1 </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+چیست؟<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+مخفف </span><span dir="ltr" style="font-family: Tahoma">Short Message Service</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+است.تکنولوژی
+است که باعث
+فرستادن و
+دریافت پیام
+ها بین
+تلفنهای
+موبایل می
+شود. </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+برای اولین
+بار در اروپا
+در سال 1992
+پیشنهاد شد و
+استانداردهای
+</span><span dir="ltr" style="font-family: Tahoma">GSM</span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span> <span lang="FA">(</span></span><span dir="ltr" style="font-family: Tahoma">Global System for Mobile Communication</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>) را نیز در
+بر گرفت. بعد
+به تکنولوژی
+های بی سیم
+مثل </span><span dir="ltr" style="font-family: Tahoma">CDMA</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> و</span><span dir="ltr" style="font-family: Tahoma">TDMA </span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span><span>&nbsp;</span>منتقل
+شد.</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma" lang="FA"><span dir="ltr"></span> </span><span style="font-family: Tahoma" lang="FA">استانداردهای
+</span><span dir="ltr" style="font-family: Tahoma">GSM</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> و </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+بطور اصلی با </span><span dir="ltr" style="font-family: Tahoma">ETSI</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> توسعه
+یافت. </span><span dir="ltr" style="font-family: Tahoma">ETSI</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+مخفف </span><span dir="ltr" style="font-family: Tahoma">European Telecommunication Standards Institute</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> است. اکنون </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>3GPP</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>(</span><span dir="ltr" style="font-family: Tahoma">Third Generation Partnership
+Project</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>) برای
+توسعه و
+نگهداری
+استانداردهای
+</span><span dir="ltr" style="font-family: Tahoma">GSM</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> و</span><span dir="ltr" style="font-family: Tahoma">SMS </span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span><span>&nbsp;</span>قابل
+پشتیبانی است.</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma" lang="FA"><span dir="ltr"></span> </span><span style="font-family: Tahoma" lang="FA">همانطور
+که به این تکنولوژی
+نام </span><span dir="ltr" style="font-family: Tahoma">Short Message Service</span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span> <span lang="FA">داده شده
+است، داده
+هایی که با یک
+پیام </span></span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+منتقل می شوند
+خیلی محدود
+هستند. یک
+پیام </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+می تواند شامل
+بیش از 140 بایت (1120
+بیت) داده
+باشد. بنابراین
+یک پیام </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+می تواند
+شامل:<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 55.5pt; text-align: justify; text-indent: -37.5pt">
+<!--[if !supportLists]--><span style="font-family: Tahoma"><span>1-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal; font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span dir="rtl"><span style="font-family: Tahoma" lang="FA">160
+کارکتر، اگر
+کارکتر7 بیتی
+بکار رود
+(مناسب برای
+کارکترهای
+لاتین)<o:p></o:p></span></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 55.5pt; text-align: justify; text-indent: -37.5pt">
+<!--[if !supportLists]--><span style="font-family: Tahoma"><span>2-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal; font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span dir="rtl"><span style="font-family: Tahoma" lang="FA">70
+کارکتر، اگر</span></span><span dir="ltr" style="font-family: Tahoma">Unicode UCS2</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> 16 بیتی بکار
+رود(پیام های
+متنی </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+شامل کارکترهای
+غیر لاتین مثل
+کارکترهای
+چینی باید از</span><span dir="ltr" style="font-family: Tahoma">encoding</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> 16 بیتی
+استفاده کنند)<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 18pt; text-align: justify">
+<span style="font-family: Tahoma" lang="FA"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 18pt; text-align: justify">
+<span style="font-family: Tahoma" lang="FA">پیام
+دهی متنی کوتاه،
+از زبانهای
+بین المللی
+پشتیبانی می
+کند و با همه
+زبانهای
+حمایت شده
+توسط </span><span dir="ltr" style="font-family: Tahoma">Unicode</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+شامل عربی،
+چینی، ژاپنی و
+کره ای خوب
+کار می کند.<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 18pt; text-align: justify">
+<span style="font-family: Tahoma" lang="FA">گذشته
+از این متن،
+پیام های کوتاه
+می توانند
+داده های
+باینری را نیز
+حمل کنند.
+برای فرستادن
+تون های زنگ،
+تصاویر، </span><span dir="ltr" style="font-family: Tahoma">logo</span><span style="font-family: Tahoma" lang="FA">های
+عمل
+کننده،کاغذ
+دیواری ها،
+انیمیشن ها،کارت
+های تجاری(مثل
+</span><span dir="ltr" style="font-family: Tahoma">VCards</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>) و
+پیکربندی </span><span dir="ltr" style="font-family: Tahoma">WAP</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+برای یک تلفن
+موبایل با
+پیام </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+ممکن است.<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 18pt; text-align: justify">
+<span style="font-family: Tahoma" lang="FA">مزیت
+اصلی پیام
+کوتاه <span>&nbsp;</span>اینست
+که توسط 100% تلفن
+های موبایل </span><span dir="ltr" style="font-family: Tahoma">GSM</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> پشتیبانی
+می شوند.<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 18pt; text-align: justify">
+<span style="font-family: Tahoma" lang="FA">برای
+فرستادن و
+دریافت پیام
+های کوتاه
+ازطریق یک
+تلفن موبایل و
+با استفاده از
+یک </span><span dir="ltr" style="font-family: Tahoma">PC</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> حاوی
+سیستم عامل
+ویندوز به
+موارد زیر
+نیاز دارید:<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 54pt; text-align: justify; text-indent: -18pt">
+<!--[if !supportLists]--><span style="font-family: Tahoma"><span>1-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal; font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span dir="rtl"><span style="font-family: Tahoma" lang="FA">یک تلفن
+موبایل که می
+تواند به
+کامپیوتر شما
+متصل شود
+(بعضی موبایل
+ها رابطی برای
+اتصال به
+کامپیوتر
+ندارند)<o:p></o:p></span></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 54pt; text-align: justify; text-indent: -18pt">
+<!--[if !supportLists]--><span style="font-family: Tahoma"><span>2-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal; font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span dir="rtl"><span style="font-family: Tahoma" lang="FA">یک
+برنامه
+ویندوز که می
+تواند تلفن
+موبایل را برای
+فرستادن و
+دریافت پیام
+های کوتاه
+کنترل کند.</span></span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span><span>&nbsp;&nbsp; </span><o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA">امروزه
+بیشتر موبایل
+ها حداقل از یکی
+از موارد زیر
+برای اتصال به
+</span><span dir="ltr" style="font-family: Tahoma">PC</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> پشتیبانی
+می کنند:<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 36pt; text-align: justify; text-indent: -18pt">
+<!--[if !supportLists]--><span style="font-family: Tahoma"><span>1-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal; font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span dir="rtl"><span style="font-family: Tahoma" lang="FA">از طریق </span></span><span dir="ltr" style="font-family: Tahoma">infrared</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>(</span><span dir="ltr" style="font-family: Tahoma">IrDA</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>)<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 36pt; text-align: justify; text-indent: -18pt">
+<!--[if !supportLists]--><span style="font-family: Tahoma"><span>2-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal; font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span dir="rtl"><span style="font-family: Tahoma" lang="FA">از طریق </span></span><span dir="ltr" style="font-family: Tahoma">Bluetooth<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 36pt; text-align: justify; text-indent: -18pt">
+<!--[if !supportLists]--><span style="font-family: Tahoma"><span>3-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal; font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span dir="rtl"><span style="font-family: Tahoma" lang="FA">ازطریق
+کابل </span></span><span dir="ltr" style="font-family: Tahoma">USB<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 36pt; text-align: justify; text-indent: -18pt">
+<!--[if !supportLists]--><span style="font-family: Tahoma"><span>4-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal; font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span dir="rtl"><span style="font-family: Tahoma" lang="FA">از طریق
+کابل سریال</span></span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span dir="ltr" style="font-family: Tahoma"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA">برنامه
+ویندوز برای
+فرستادن و
+دریافت پیام های
+کوتاه توسط
+بعضی جنبه های
+تلفن موبایل
+فراهم می شود.
+برای مثال
+نوکیا بسته
+نرم افزاری با
+نام </span><span dir="ltr" style="font-family: Tahoma">Nokia PC Suite</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+را برای
+کاربران تلفن
+موبایل خود ارائه
+می دهد که می
+تواند بدون
+شارژ از وب
+سایت نوکیا
+دانلود شود.<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA">مایکروسافت
+هم یک برنامه
+مجانی با نام </span><span dir="ltr" style="font-family: Tahoma">SMS Sender</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> ایجاد
+کرده که
+کاربران
+ویندوز را
+قادر به فرستادن
+پیام های </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+از طریق
+موبایل </span><span dir="ltr" style="font-family: Tahoma">GSM</span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span> <span lang="FA"><span>&nbsp;</span>، از
+یک </span></span><span dir="ltr" style="font-family: Tahoma">PC</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+می کند. محدودیت
+بزرگ این
+برنامه
+ویندوزی آنست
+که نمی تواند
+پیام های </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+را از یک تلفن
+موبایل
+بخواند. گذشته
+ازاین، از
+دیگر فرمت های
+پیام های متنی
+عادی مثل پیام
+های </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+رشته ای، </span><span dir="ltr" style="font-family: Tahoma">flash message</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>، پیام های </span><span dir="ltr" style="font-family: Tahoma">MMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> و پیام
+هایی که شامل
+صدای زنگ و </span><span dir="ltr" style="font-family: Tahoma">logo</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> است حمایت
+نمی کند.<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<b><span style="font-family: Tahoma" lang="FA">توجه:</span></b><span style="font-family: Tahoma" lang="FA">
+برنامه </span><span dir="ltr" style="font-family: Tahoma">SMS Sender</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+فقط می تواند
+برروی ویندوز </span><span dir="ltr" style="font-family: Tahoma">XP</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+و ویندوز
+سرور2003 نصب شود. <o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA"><o:p>&nbsp;&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<b><span style="font-family: Tahoma" lang="FA">چگونگی
+دریافت پیام
+های کوتاه<span>&nbsp; </span>با استفاده
+از یک
+کامپیوتر </span></b><b><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span></b>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA">در حالت
+کلی سه روش
+برای دریافت
+پیام های </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+از طریق
+کامپیوتر یا </span><span dir="ltr" style="font-family: Tahoma">PC</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+وجود دارد:<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 36pt; text-align: justify; text-indent: -18pt">
+<!--[if !supportLists]--><span style="font-family: Tahoma"><span>1-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal; font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span dir="rtl"><span style="font-family: Tahoma" lang="FA">اتصال
+تلفن موبایل
+یا مودم </span></span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+به کامپیوتر
+یا </span><span dir="ltr" style="font-family: Tahoma">PC</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> . سپس
+از یک
+کامپیوتر/</span><span dir="ltr" style="font-family: Tahoma">PC</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+و </span><span dir="ltr" style="font-family: Tahoma">AT
+Commands</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> برای
+گرفتن پیام
+های </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+دریافت شده
+ازتلفن
+موبایل یا
+مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+استفاده کنید.<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 36pt; text-align: justify; text-indent: -18pt">
+<!--[if !supportLists]--><span style="font-family: Tahoma"><span>2-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal; font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span dir="rtl"><span style="font-family: Tahoma" lang="FA">دسترسی
+به مرکز</span></span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span> </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>(SMSC)</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+یا دروازه </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+ازطریق حامل
+بی سیم. هر
+پیام </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+دریافت شده با
+استفاده ازیک
+پروتکل یا
+واسط پشتیبانی
+شده از طرف </span><span dir="ltr" style="font-family: Tahoma">SMSC</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> یا دروازه </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> برای
+کامپیوتر/</span><span dir="ltr" style="font-family: Tahoma">PC</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+شما فرستاده
+خواهد شد.</span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 36pt; text-align: justify; text-indent: -18pt">
+<!--[if !supportLists]--><span style="font-family: Tahoma"><span>3-<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal; font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span dir="rtl"><span style="font-family: Tahoma" lang="FA">دسترسی
+به دروازه </span></span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> فراهم
+کننده سرویس </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span> </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>(SMS Service provider)</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>. هر پیام </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> دریافت
+شده با
+استفاده ازیک
+پروتکل یا
+واسط پشتیبانی
+شده از طرف
+دروازه </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+برای
+کامپیوتر/</span><span dir="ltr" style="font-family: Tahoma">PC</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+شما فرستاده
+خواهد شد.</span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<b><span style="font-family: Tahoma" lang="FA">اولین
+روش:<o:p></o:p></span></b>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA">دریافت
+پیام کوتاه از
+طریق موبایل
+یا مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+نسبت به دو
+روش دیگر مزیت
+دارد.<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA">عیب
+دریافت پیام
+کوتاه با این
+روش آنست که
+موبایل یا
+مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+نمی تواند
+مقدار ترافیک
+زیاد </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+را اداره کند.
+یک روش برای
+غلبه بر این
+مشکل، بارگذاری
+میزان ترافیک </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> با یک مخزن
+از تلفن های
+موبایل یا
+مودم های </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+است.<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA">هر
+تلفن موبایل
+یا مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+شماره تلفن و
+سیم کارت خودش
+را دارد. از
+نظر برنامه
+نویسی
+فرستادن و
+دریافت پیام
+از موبایل با
+مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+مشابه هستند.<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA">درزیر
+جدول حاوی
+لیست دستورات </span><span dir="ltr" style="font-family: Tahoma">AT Commands</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> مربوط به
+فرستادن و
+دریافت </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+وجود دارد.<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA"><o:p>&nbsp;</o:p></span>
+</p>
+<div dir="rtl" align="right">
+<table class="MsoTableGrid" dir="rtl" style="border: medium none ; margin-left: 41.4pt; border-collapse: collapse" border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="border: 1pt solid windowtext; padding: 0pt 5.4pt; width: 144pt" valign="top" width="192">
+			<p class="MsoNormal" dir="rtl" style="text-align: center" align="center">
+			<b><span dir="ltr" style="font-family: Tahoma">AT command</span></b><b><span style="font-family: Tahoma" lang="FA"><o:p></o:p></span></b>
+			</p>
+			</td>
+			<td style="border-style: solid none solid solid; border-color: windowtext -moz-use-text-color windowtext windowtext; border-width: 1pt medium 1pt 1pt; padding: 0pt 5.4pt; width: 225pt" valign="top" width="300">
+			<p class="MsoNormal" dir="rtl" style="text-align: center" align="center">
+			<b><span style="font-family: Tahoma" lang="FA">معنی<o:p></o:p></span></b>
+			</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0pt 5.4pt; width: 144pt" valign="top" width="192">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify">
+			<span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CNMI</span><span style="font-family: Tahoma" lang="FA"><o:p></o:p></span>
+			</p>
+			</td>
+			<td style="border-style: none none solid solid; border-color: -moz-use-text-color -moz-use-text-color windowtext windowtext; border-width: medium medium 1pt 1pt; padding: 0pt 5.4pt; width: 225pt" valign="top" width="300">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify">
+			<span style="font-family: Tahoma" lang="FA">اشاره
+			به پیام جدید<o:p></o:p></span>
+			</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0pt 5.4pt; width: 144pt" valign="top" width="192">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify">
+			<span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CMGL<o:p></o:p></span>
+			</p>
+			</td>
+			<td style="border-style: none none solid solid; border-color: -moz-use-text-color -moz-use-text-color windowtext windowtext; border-width: medium medium 1pt 1pt; padding: 0pt 5.4pt; width: 225pt" valign="top" width="300">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify">
+			<span style="font-family: Tahoma" lang="FA">لیست
+			کردن پیام ها<o:p></o:p></span>
+			</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0pt 5.4pt; width: 144pt" valign="top" width="192">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify">
+			<span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CMGR<o:p></o:p></span>
+			</p>
+			</td>
+			<td style="border-style: none none solid solid; border-color: -moz-use-text-color -moz-use-text-color windowtext windowtext; border-width: medium medium 1pt 1pt; padding: 0pt 5.4pt; width: 225pt" valign="top" width="300">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify">
+			<span style="font-family: Tahoma" lang="FA">خواندن
+			پیام ها<o:p></o:p></span>
+			</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0pt 5.4pt; width: 144pt" valign="top" width="192">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify">
+			<span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CNMA<o:p></o:p></span>
+			</p>
+			</td>
+			<td style="border-style: none none solid solid; border-color: -moz-use-text-color -moz-use-text-color windowtext windowtext; border-width: medium medium 1pt 1pt; padding: 0pt 5.4pt; width: 225pt" valign="top" width="300">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify">
+			<span style="font-family: Tahoma" lang="FA">دانش
+			پیام جدید<o:p></o:p></span>
+			</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA">در زیر
+یک مثال ساده
+نشان داده شده
+که ثابت می
+کند ،چگونه </span><span dir="ltr" style="font-family: Tahoma">AT Command</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> ها و
+برنامه </span><span dir="ltr" style="font-family: Tahoma">HyperTerminal</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+مایکروسافت
+برای خواندن
+پیام ها
+ازمودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+یا موبایل
+استفاده می
+کند.<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA">خطوطی
+که به صورت </span><span dir="ltr" style="font-family: Tahoma">Bold</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> تایپ شده
+باید در </span><span dir="ltr" style="font-family: Tahoma">Hyper Terminal</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> وارد شوند.
+خطوط دیگر
+پاسخی است که
+از طرف مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> یا موبایل
+داده می شود.<o:p></o:p></span>
+</p>
+<p dir="ltr">
+<b><span style="font-family: Tahoma">AT</span></b><span style="font-family: Tahoma"><br>
+</span><i><span style="font-size: 10pt; font-family: Tahoma">OK</span></i><span style="font-family: Tahoma"><br>
+<b>AT+CMGF=1</b><br>
+</span><i><span style="font-size: 10pt; font-family: Tahoma">OK</span></i><span style="font-family: Tahoma"><br>
+<b>AT+CMGL="ALL"</b><br>
+</span><i><span style="font-size: 10pt; font-family: Tahoma">+CMGL: 1,"REC READ","+989353659299",,"06/11/11,00:30:29+32"<br>
+Hello, welcome to our SMS tutorial.<br>
++CMGL: 2,"REC READ","+989353659299",,"06/11/11,00:32:20+32"<br>
+A simple demo of SMS text messaging.<br>
+<br>
+OK</span></i><i><span dir="rtl" style="font-size: 10pt; font-family: Tahoma" lang="FA"><o:p></o:p></span></i>
+</p>
+<p dir="rtl" style="text-align: justify; direction: rtl; unicode-bidi: embed">
+<span style="font-family: Tahoma" lang="FA">توضیح
+:<o:p></o:p></span>
+</p>
+<p dir="rtl" style="text-align: justify; direction: rtl; unicode-bidi: embed">
+<span style="font-family: Tahoma" lang="FA">خط
+اول: "</span><span dir="ltr" style="font-family: Tahoma">AT</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>"</span><span style="font-family: Tahoma" lang="AR-SA"> برای
+بررسی شرایط
+به مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+فرستاده می
+شود. </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+کد نتیجه "</span><span dir="ltr" style="font-family: Tahoma">OK</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>" (خط
+دوم) را بازمی
+گرداند، که به
+این معنی است که
+ارتباط بین
+برنامه </span><span dir="ltr" style="font-family: Tahoma">HyperTerminal</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> و
+مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+خوب کار می کند.<o:p></o:p></span>
+</p>
+<p dir="rtl" style="text-align: justify; direction: rtl; unicode-bidi: embed">
+<span style="font-family: Tahoma" lang="AR-SA">خط سوم: </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CMGF</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> به
+مودم دستور می
+دهد تا در
+حالت متنی </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+عمل کند.
+نتیجه "</span><span dir="ltr" style="font-family: Tahoma">OK</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>"
+بازگردانده
+می شود (خط 4)، که
+نشان می دهد
+خط کد </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>"AT+CMGF=1"</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> با موفقیت
+انجام شده
+است. اگر کد "</span><span dir="ltr" style="font-family: Tahoma">ERROR</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>"</span><span style="font-family: Tahoma" lang="AR-SA">
+بازگردانده
+شود، شبیه
+آنست که مودم
+از حالت متنی </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+پشتیبانی
+نکرده است.<o:p></o:p></span>
+</p>
+<p dir="rtl" style="text-align: justify; direction: rtl; unicode-bidi: embed">
+<span style="font-family: Tahoma" lang="AR-SA">خط 5-9: </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CMGL</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+برای لیست
+کردن تمام
+پیام های متنی
+</span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> در
+حافظه پیام
+مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+بکارمی رود. در
+این مثال دو
+پیام متنی </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+درحافظه پیام
+وجود دارد: </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>"Hello, welcome to our SMS tutorial."</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> و </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>"A
+simple demo of SMS text messaging."</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> .
+</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>"+989353659299"</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+شماره تلفن
+موبایل فرستنده
+است. <span>&nbsp;&nbsp;</span></span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>"06/11/11,00:30:29+32"</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+و </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>"06/11/11,00:32:20+32"</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> زمان
+دریافت پیام
+های متنی </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+توسط </span><span dir="ltr" style="font-family: Tahoma">SMSC</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+را به ما می
+گوید. "</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+32</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>"</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma" lang="AR-SA"><span dir="ltr"></span> </span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span><span>&nbsp;</span>ناحیه
+زمان (</span><span dir="ltr" style="font-family: Tahoma">time
+zone</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>) است.<o:p></o:p></span>
+</p>
+<p dir="rtl" style="margin-right: 36pt; text-align: justify; direction: rtl; unicode-bidi: embed">
+<b><span style="font-family: Tahoma" lang="AR-SA">توجه:</span></b><span style="font-family: Tahoma" lang="AR-SA"> واحد،
+یک ربع ساعت
+است. بنابراین
+، </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+32</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> به
+معنی </span><span dir="ltr" style="font-family: Tahoma">GMT+8</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+ساعت، 32ربع
+ساعت = 8 ساعت. "</span><span dir="ltr" style="font-family: Tahoma">REC READ</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>"
+هردو پیام
+متنی که ازقبل
+خوانده شده را
+نشان می دهد.<o:p></o:p></span>
+</p>
+<p dir="rtl" style="text-align: justify; direction: rtl; unicode-bidi: embed">
+<span style="font-family: Tahoma" lang="AR-SA">خط 11: کد
+نتیجه "</span><span dir="ltr" style="font-family: Tahoma">OK</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>"
+نشان می دهد
+که اجرای </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CMGL</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+با موفقیت
+انجام شده
+است.<o:p></o:p></span>
+</p>
+<p dir="rtl" style="text-align: justify; direction: rtl; unicode-bidi: embed">
+<span style="font-family: Tahoma" lang="AR-SA">برای
+فعال کردن نرم
+افزار دریافت
+پیام های متنی،
+باید </span><span dir="ltr" style="font-family: Tahoma">source
+code</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ی برای
+اتصال و
+فرستادن </span><span dir="ltr" style="font-family: Tahoma">AT Command</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ها
+به تلفن
+موبایل یا
+مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+بنویسید،
+درست شبیه
+برنامه </span><span dir="ltr" style="font-family: Tahoma">terminal</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+بنویسید (مثل </span><span dir="ltr" style="font-family: Tahoma">HyperTerminal</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+ویندوزمایکروسافت).
+می توانید </span><span dir="ltr" style="font-family: Tahoma">source code</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ی
+در </span><span dir="ltr" style="font-family: Tahoma">C</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>،</span><span dir="ltr" style="font-family: Tahoma">C++</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>،</span><span dir="ltr" style="font-family: Tahoma">Java</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>،</span><span dir="ltr" style="font-family: Tahoma">Visual Basic</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>،</span><span dir="ltr" style="font-family: Tahoma">Delphi</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>،</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma" lang="AR-SA"><span dir="ltr"></span> </span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span><span>&nbsp;</span>یا هر
+زبان برنامه
+نویسی دیگر که
+دوست دارید
+بنویسید.<o:p></o:p></span>
+</p>
+<p dir="rtl" style="text-align: justify; direction: rtl; unicode-bidi: embed">
+<span style="font-family: Tahoma" lang="AR-SA">معمولا
+راه حل بهتری
+برای استفاده
+از </span><span dir="ltr" style="font-family: Tahoma">API</span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span> <span lang="AR-SA">(</span></span><span dir="ltr" style="font-family: Tahoma">Application
+Programming Interface</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>) / </span><span dir="ltr" style="font-family: Tahoma">SDK</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>(</span><span dir="ltr" style="font-family: Tahoma">Software Development Kit</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>) /
+کتابخانه (</span><span dir="ltr" style="font-family: Tahoma">Library</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>) پیام </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+سطح بالا ،
+بجای اینکه
+خودتان کدها
+را برای تعامل
+با تلفن
+موبایل یا
+مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+از طریق </span><span dir="ltr" style="font-family: Tahoma">AT Command</span><span style="font-family: Tahoma" lang="AR-SA">ها بنویسید. </span><span dir="ltr" style="font-family: Tahoma">API</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> / </span><span dir="ltr" style="font-family: Tahoma">SDK</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> / </span><span dir="ltr" style="font-family: Tahoma">library</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+جزئیات سطح
+پایین را بسته
+بندی می کند.<o:p></o:p></span>
+</p>
+<p dir="rtl" style="text-align: justify; direction: rtl; unicode-bidi: embed">
+<span style="font-family: Tahoma" lang="AR-SA">بنابراین
+یک توسعه دهنده
+برنامه </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> نیاز
+به دانستن </span><span dir="ltr" style="font-family: Tahoma">AT Command</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ها
+و ترکیب پیام
+های </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+در سطح بیت (</span><span dir="ltr" style="font-family: Tahoma">bit-level</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>)
+ندارد. بعضی </span><span dir="ltr" style="font-family: Tahoma">API</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ها / </span><span dir="ltr" style="font-family: Tahoma">SDK</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ها/ </span><span dir="ltr" style="font-family: Tahoma">Library</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+های پیام </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> از
+پروتکل های </span><span dir="ltr" style="font-family: Tahoma">SMSC</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+علاوه بر </span><span dir="ltr" style="font-family: Tahoma">AT Command</span><span style="font-family: Tahoma" lang="AR-SA">ها پشتیبانی
+می کنند. <o:p></o:p></span>
+</p>
+<p dir="rtl" style="text-align: justify; direction: rtl; unicode-bidi: embed">
+<span style="font-family: Tahoma" lang="AR-SA">برای
+حرکت از راه
+حل </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+مبتنی بر مودم
+بی سیم به راه
+حل </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+مبتنی بر </span><span dir="ltr" style="font-family: Tahoma">SMSC</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>،
+معمولا نیاز
+به اصلاح پیکربندی
+فایل / خصوصیت
+فایل یا ایجاد
+تغییرات اندک
+در </span><span dir="ltr" style="font-family: Tahoma">source code</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+برنامه پیام </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+خود دارید.<o:p></o:p></span>
+</p>
+<p dir="rtl" style="text-align: justify; direction: rtl; unicode-bidi: embed">
+<span style="font-family: Tahoma" lang="AR-SA">راه حل
+سطح بالای
+دیگر،
+قراردادن یک
+دروازه </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> بین
+برنامه پیام
+دهنده </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> و
+موبایل یا
+مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+است. برنامه
+پیام دهنده </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> می
+تواند از پروتکل
+های ساده ای
+مثل </span><span dir="ltr" style="font-family: Tahoma">HTTP</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+/ </span><span dir="ltr" style="font-family: Tahoma">HTTPS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+برای دریافت
+پیام های </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+استفاده کند.
+اگر از یک
+پروتکل </span><span dir="ltr" style="font-family: Tahoma">SMSC</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> (مثل </span><span dir="ltr" style="font-family: Tahoma">SMPP</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ، </span><span dir="ltr" style="font-family: Tahoma">CIMD</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> و
+غیره) بجای </span><span dir="ltr" style="font-family: Tahoma">HTTP</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> / </span><span dir="ltr" style="font-family: Tahoma">HTTPS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+برای ارتباط
+با دروازه </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+استفاده شود،
+یک </span><span dir="ltr" style="font-family: Tahoma">API</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+/ </span><span dir="ltr" style="font-family: Tahoma">SDK</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> /</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma" lang="AR-SA"><span dir="ltr"></span> </span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span><span>&nbsp;</span></span><span dir="ltr" style="font-family: Tahoma">Library</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+پیام دهنده </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> می
+تواند برای
+شما خیلی مفید
+باشد. به این
+دلیل که
+جزئیات
+پروتکل </span><span dir="ltr" style="font-family: Tahoma">SMSC</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> را
+بسته بندی می
+کند.<o:p></o:p></span>
+</p>
+<p dir="rtl" style="text-align: justify; direction: rtl; unicode-bidi: embed">
+<span class="maintext"><span style="font-family: Tahoma" lang="AR-SA"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><span style="font-family: Tahoma" lang="FA"><o:p></o:p></span>
+</p>
+<br>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<b><span style="font-family: Tahoma" lang="FA"><o:p>&nbsp;</o:p></span></b>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<b><span style="font-family: Tahoma" lang="FA">ارسال
+پیام های
+کوتاه<span>&nbsp;
+</span>از کامپیوتر
+به تلفن همراه</span></b><b><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span></b>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="AR-SA">به طور
+معمول دو روش
+برای ارسال </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> از
+کامپیوتربه
+موبایل وجود
+دارد:<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 54pt; text-align: justify; text-indent: -18pt; line-height: 150%">
+<!--[if !supportLists]--><span style="font-family: Tahoma"><span>1.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal; font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span dir="rtl"><span style="font-family: Tahoma" lang="AR-SA">بین یک<span>&nbsp;
+</span>تلفن همراه (</span></span><span dir="ltr" style="font-family: Tahoma">mobile phone</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>) یا
+یک مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> با
+یک کامپیوتر اتصالی
+برقرار کنید
+.سپس برای
+دستور دادن به
+تلفن همراه یا
+مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+جهت ارسال </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>، از
+کامپیوتر و </span><span dir="ltr" style="font-family: Tahoma">AT command</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ها
+استفاده کنید
+.</span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 54pt; text-align: justify; text-indent: -18pt; line-height: 150%">
+<!--[if !supportLists]--><span style="font-family: Tahoma"><span>2.<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-size-adjust: none; font-stretch: normal; font-family: &#39;Times New Roman&#39;">&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><!--[endif]--><span dir="rtl"><span style="font-family: Tahoma" lang="AR-SA">با کامپیوتر
+(</span></span><span dir="ltr" style="font-family: Tahoma">PC</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>) به
+مرکز </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+(</span><span dir="ltr" style="font-family: Tahoma">SMSC</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ) یا
+گذرگاه </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> یک
+حمل ونقل
+بیسیم (</span><span dir="ltr" style="font-family: Tahoma">SMS gateway of a wireless carrier</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>)، یا
+یک ارائه کننده
+ی سرویس </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> متصل
+شوید</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>.</span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span> <span lang="AR-SA">سپس
+با استفاده از
+پروتکل یا
+رابطی که توسط
+</span></span><span dir="ltr" style="font-family: Tahoma">SMSC</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+یا درگاه</span><span dir="ltr" style="font-family: Tahoma">SMS </span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span><span>&nbsp;</span>(</span><span dir="ltr" style="font-family: Tahoma">SMS
+gateway</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>) پشتیبانی
+می شود،
+پیامتان (</span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>) را
+ارسال کنید</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>.<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="AR-SA"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="AR-SA">در این
+مقاله قصد
+داریم اولین
+روش ارسال </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> را
+توضیح<span>&nbsp;
+</span>دهیم. <o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="AR-SA"><o:p>&nbsp;</o:p></span>
+</p>
+<span style="font-family: Tahoma" lang="AR-SA"><o:p></o:p></span> <br>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="AR-SA"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<b><span style="font-family: Tahoma" lang="AR-SA">ارسال </span></b><b><span dir="ltr" style="font-family: Tahoma">SMS</span></b><span dir="rtl"></span><b><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> از
+یک کامپیوتر
+با استفاده از
+یک تلفن همراه
+یا مودم </span></b><b><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span></b><span dir="rtl"></span><b><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> :<o:p></o:p></span></b>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="AR-SA">مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>،
+یک مودم بیسیم
+است که با
+شبکه های
+بیسیم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> کار می
+کند. مودم
+بیسم بسیار
+شبیه مودم </span><span dir="ltr" style="font-family: Tahoma">dial-up</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> است.
+تفاوت اصلی
+این دو در این
+است که مودم
+بیسیم داده ها
+را در میان
+شبکه ی بیسیم
+انتقال می دهد
+حال آنکه مودم
+</span><span dir="ltr" style="font-family: Tahoma">dial-up</span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span> <span lang="AR-SA">داده
+ها را در میان
+سیم های خط
+تلفن منتقل می
+کند. بیشتر
+تلفن های همراه
+را می توان به
+عنوان مودم
+بیسیم به کار
+برد. بعضی از
+تلفن های
+همراه
+محدودیتهایی
+را در مقایسه
+با مودم های </span></span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+دارا هستند. <o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="AR-SA">جهت
+ارسال </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span> </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>,</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+ابتدا باید یک
+سیم کارت
+معتبر (که
+بعدا به کامپیوتر
+متصل می شود)
+را در تلفن
+همراه یا مودم
+</span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+قرار دهید.
+چندین راه
+مختلف جهت
+اتصال یک تلفن
+همراه یا مودم
+</span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> به
+کامپیوتر
+وجود دارد.
+برای مثال،
+این ها می
+توانند با
+کابل<span>&nbsp;
+</span>سریال، یک
+کابل </span><span dir="ltr" style="font-family: Tahoma">USB</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>،
+یک لینک </span><span dir="ltr" style="font-family: Tahoma">Bluetooth</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>،
+یا یک لینک </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span><span>&nbsp;</span>infrared</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span><span>&nbsp; </span>بهم
+متصل
+شوند.انتخاب
+روش اتصال
+بستگی به
+قابلیتهای
+تلفن همراه یا
+مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+دارد. مثلا
+اگر گوشی
+موبایل </span><span dir="ltr" style="font-family: Tahoma">Bluetooth</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> را
+پشتیبانی نمی
+کند، نمی توان
+تلفن همراه را
+از این طریق
+به کامپیوتر متصل
+کرد.<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="AR-SA">بعد از
+اتصال یک تلفن
+همراه یا مودم
+</span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> به
+کامپیوتر، می
+توانید با
+ارسال یکسری
+دستورات،
+تلفن همراه یا
+مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+را کنترل
+کنید. </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span><span>&nbsp;</span>AT command</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ها
+دستوراتی
+هستند که به
+این منظور
+بکار برده می
+شوند. (</span><span dir="ltr" style="font-family: Tahoma">AT
+command</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ها همچنین
+به منظور
+کنترل
+مودمهای </span><span dir="ltr" style="font-family: Tahoma">dial-up</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> برای
+سیستم تلفن
+سیمی استفاده
+می شوند). مودم های
+</span><span dir="ltr" style="font-family: Tahoma">dial-up</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>،
+مودم های </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> و
+تلفن های
+همراه یک
+مجموعه ی
+استاندارد از
+این دستورات
+را پشتیبانی
+می کنند. مودم های
+</span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> و
+تلفن های
+همراه علاوه
+براین
+دستورات
+استاندارد،
+یک مجموعه ی
+توسعه یافته (</span><span dir="ltr" style="font-family: Tahoma">Extended</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>) از </span><span dir="ltr" style="font-family: Tahoma">AT command</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ها
+را نیز
+پشتیبانی می
+کنند.یکی از
+جنبه های استفاده
+از این
+دستورات
+توسعه یافته
+ارسال و
+دریافت </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> است.<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="AR-SA"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="AR-SA">جدول
+زیرلیست
+دستوراتی را
+نشان می دهد
+که جهت نوشتن
+وارسال </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> بکار
+می روند.<o:p></o:p></span>
+</p>
+<div dir="rtl" align="right">
+<table class="MsoTableGrid" dir="rtl" style="border: medium none ; border-collapse: collapse" border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="border: 1pt solid windowtext; padding: 0pt 5.4pt; width: 258.7pt" valign="top" width="345">
+			<p class="MsoNormal" dir="rtl" style="text-align: center; line-height: 150%" align="center">
+			<b><span style="font-family: Tahoma" lang="AR-SA">توضیح<o:p></o:p></span></b>
+			</p>
+			</td>
+			<td style="border-style: solid none solid solid; border-color: windowtext -moz-use-text-color windowtext windowtext; border-width: 1pt medium 1pt 1pt; padding: 0pt 5.4pt; width: 167.4pt" valign="top" width="223">
+			<p class="MsoNormal" dir="ltr" style="text-align: center; line-height: 150%; direction: ltr; unicode-bidi: embed" align="center">
+			<b><span style="font-family: Tahoma">AT
+			command<o:p></o:p></span></b>
+			</p>
+			</td>
+		</tr>
+		<tr style="height: 14.9pt">
+			<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0pt 5.4pt; width: 258.7pt; height: 14.9pt" valign="top" width="345">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+			<span style="font-family: Tahoma" lang="AR-SA">ارسال
+			پیام<o:p></o:p></span>
+			</p>
+			</td>
+			<td style="border-style: none none solid solid; border-color: -moz-use-text-color -moz-use-text-color windowtext windowtext; border-width: medium medium 1pt 1pt; padding: 0pt 5.4pt; width: 167.4pt; height: 14.9pt" valign="top" width="223">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+			<span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CMGS<o:p></o:p></span>
+			</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0pt 5.4pt; width: 258.7pt" valign="top" width="345">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+			<span style="font-family: Tahoma" lang="AR-SA">ارسال
+			پیام از
+			مکانی که
+			ذخیره شده
+			است<o:p></o:p></span>
+			</p>
+			</td>
+			<td style="border-style: none none solid solid; border-color: -moz-use-text-color -moz-use-text-color windowtext windowtext; border-width: medium medium 1pt 1pt; padding: 0pt 5.4pt; width: 167.4pt" valign="top" width="223">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+			<span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CMSS</span><span style="font-family: Tahoma" lang="AR-SA"><o:p></o:p></span>
+			</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0pt 5.4pt; width: 258.7pt" valign="top" width="345">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+			<span style="font-family: Tahoma" lang="AR-SA">نوشتن
+			پیام در
+			حافظه<o:p></o:p></span>
+			</p>
+			</td>
+			<td style="border-style: none none solid solid; border-color: -moz-use-text-color -moz-use-text-color windowtext windowtext; border-width: medium medium 1pt 1pt; padding: 0pt 5.4pt; width: 167.4pt" valign="top" width="223">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+			<span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CMGW</span><span style="font-family: Tahoma" lang="AR-SA"><o:p></o:p></span>
+			</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0pt 5.4pt; width: 258.7pt" valign="top" width="345">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+			<span style="font-family: Tahoma" lang="AR-SA">حذف
+			پیام<o:p></o:p></span>
+			</p>
+			</td>
+			<td style="border-style: none none solid solid; border-color: -moz-use-text-color -moz-use-text-color windowtext windowtext; border-width: medium medium 1pt 1pt; padding: 0pt 5.4pt; width: 167.4pt" valign="top" width="223">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+			<span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CMGD</span><span style="font-family: Tahoma" lang="AR-SA"><o:p></o:p></span>
+			</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0pt 5.4pt; width: 258.7pt" valign="top" width="345">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+			<span style="font-family: Tahoma" lang="AR-SA">ارسال
+			دستور<o:p></o:p></span>
+			</p>
+			</td>
+			<td style="border-style: none none solid solid; border-color: -moz-use-text-color -moz-use-text-color windowtext windowtext; border-width: medium medium 1pt 1pt; padding: 0pt 5.4pt; width: 167.4pt" valign="top" width="223">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+			<span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CMGC</span><span style="font-family: Tahoma" lang="AR-SA"><o:p></o:p></span>
+			</p>
+			</td>
+		</tr>
+		<tr>
+			<td style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0pt 5.4pt; width: 258.7pt" valign="top" width="345">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+			<span style="font-family: Tahoma" lang="AR-SA">ارسال
+			چندین پیام<o:p></o:p></span>
+			</p>
+			</td>
+			<td style="border-style: none none solid solid; border-color: -moz-use-text-color -moz-use-text-color windowtext windowtext; border-width: medium medium 1pt 1pt; padding: 0pt 5.4pt; width: 167.4pt" valign="top" width="223">
+			<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+			<span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CMMS<o:p></o:p></span>
+			</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span dir="ltr" style="font-family: Tahoma"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="AR-SA">یک راه
+ارسال </span><span dir="ltr" style="font-family: Tahoma">AT command</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ها به
+تلفن همراه یا
+مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>،
+استفاده از یک
+برنامه ی
+ترمینال است.
+وظیفه ی برنامه
+ی ترمینال
+بدین صورت است
+که: کارکترهایی
+را که تایپ می
+کنید، به یک
+تلفن همراه یا
+مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+می فرستد. سپس تلفن
+همراه یا مودم
+</span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span> <span lang="AR-SA">پاسخ
+دریافتی را در
+صفحه نمایش
+نشان می دهد. </span></span><span dir="ltr" style="font-family: Tahoma">Hyper Terminal</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>،
+برنامه ی
+ترمینال در </span><span dir="ltr" style="font-family: Tahoma">Windows</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+است.<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="AR-SA">در زیر
+یک مثال ساده
+جهت توضیح
+چگونگی
+استفاده از
+این دستورات و
+همچنین
+استفاده از
+برنامه ی </span><span dir="ltr" style="font-family: Tahoma">Hyper Terminal</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> به
+منظور ارسال </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>،
+نشان داده شده
+است. خطوطی که
+فونت آنها </span><span dir="ltr" style="font-family: Tahoma">bold</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> است،
+دستوراتی
+هستند که ما
+باید آنها را
+در </span><span dir="ltr" style="font-family: Tahoma">Hyper terminal</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+بنویسیم. خطوط
+دیگر،
+پاسخهای
+برگشتی از طرف
+تلفن همراه یا
+مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+است.<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: left; line-height: 150%" align="right">
+<span style="font-family: Tahoma" lang="AR-SA"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: left; line-height: 150%" align="right">
+<span class="codetext"><b><span dir="ltr" style="font-family: Tahoma">AT</span></b></span><span dir="ltr" style="font-family: Tahoma"><br>
+</span><span class="codetext"><i><span dir="ltr" style="line-height: 150%; font-size: 10pt; font-family: Tahoma">OK</span></i></span><span dir="ltr" style="font-family: Tahoma"><br>
+<span class="codetext"><b>AT+CMGF=1</b></span><br>
+</span><span class="codetext"><i><span dir="ltr" style="line-height: 150%; font-size: 10pt; font-family: Tahoma">OK</span></i></span><span dir="ltr" style="font-family: Tahoma"><br>
+<span class="codetext"><b>AT+CMGW="+989353659299"</b></span><br>
+<span class="codetext">&gt; <b>A simple demo of SMS text messaging.</b></span><br>
+</span><span class="codetext"><i><span dir="ltr" style="line-height: 150%; font-size: 10pt; font-family: Tahoma">+CMGW: 1</span></i></span><span dir="ltr" style="font-family: Tahoma"><br>
+<br>
+</span><span class="codetext"><i><span dir="ltr" style="line-height: 150%; font-size: 10pt; font-family: Tahoma">OK</span></i></span><span dir="ltr" style="font-family: Tahoma"><br>
+<span class="codetext"><b>AT+CMSS=1</b></span><br>
+</span><span class="codetext"><i><span dir="ltr" style="line-height: 150%; font-size: 10pt; font-family: Tahoma">+CMSS: 20</span></i></span><i><span dir="ltr" style="line-height: 150%; font-size: 10pt; font-family: Tahoma"><br>
+</span></i><span dir="ltr" style="font-family: Tahoma"><br>
+</span><span class="codetext"><i><span dir="ltr" style="line-height: 150%; font-size: 10pt; font-family: Tahoma">OK</span></i></span><span class="codetext"><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span class="codetext"><b><span style="font-family: Tahoma" lang="AR-SA">توضیح:<o:p></o:p></span></b></span>
+</p>
+<ul style="margin-top: 0pt" type="disc">
+	<li class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%"><span style="font-family: Tahoma" lang="AR-SA">خط 1: به
+	منظور تست </span><span dir="ltr" style="font-family: Tahoma">connection</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>، "</span><span dir="ltr" style="font-family: Tahoma">AT</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>"
+	به مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+	ارسال می شود. مودم
+	</span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+	نتیجه که "</span><span dir="ltr" style="font-family: Tahoma">OK</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>"
+	است را در خط
+	بعد(2) برمی
+	گرداند. نتیجه
+	بدین معناست
+	که </span><span dir="ltr" style="font-family: Tahoma">connection</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+	بین برنامه ی</span><span dir="ltr" style="font-family: Tahoma">Hyper Terminal</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> و
+	مودم</span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS
+	</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span><span>&nbsp;</span>به
+	خوبی برقرار
+	شده و درست
+	کار می کند. </span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span></li>
+	<li class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%"><span style="font-family: Tahoma" lang="AR-SA">خط3: </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CMGF</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+	دستور </span><span dir="ltr" style="font-family: Tahoma">AT command</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ی
+	است که جهت
+	قرار دادن
+	مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+	در حالت </span><span dir="ltr" style="font-family: Tahoma">text </span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span><span>&nbsp;</span>استفاده
+	می شود. نتیجه
+	ی این دستور
+	که "</span><span dir="ltr" style="font-family: Tahoma">OK</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>"
+	است در خط 4 بر
+	گردانده شده
+	است. این نشان
+	می دهد که<span>&nbsp; </span>دستور "</span><span dir="ltr" style="font-family: Tahoma">AT+CMGF=1</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>"
+	با موفقیت
+	اجرا شده است. اگر
+	نتیجه ی این
+	دستور "</span><span dir="ltr" style="font-family: Tahoma">ERRROR</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>"
+	باشد، به این
+	معنا است که
+	مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+	ی که در
+	اختیار
+	دارید حالت </span><span dir="ltr" style="font-family: Tahoma">text</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> را
+	پشتیبانی
+	نمی کند. جهت
+	تعیین این
+	مطلب، در
+	برنامه ی </span><span dir="ltr" style="font-family: Tahoma">Hyper Terminal</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+	دستور"</span><span dir="ltr" style="font-family: Tahoma">AT+CMGF=?</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>"
+	را تایپ کنید.
+	اگر پاسخ "</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CMGF(0,1)</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>"
+	بود (0=مد </span><span dir="ltr" style="font-family: Tahoma">PDU</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> و1=
+	مد</span><span dir="ltr" style="font-family: Tahoma">text</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>)،
+	مودم حالت </span><span dir="ltr" style="font-family: Tahoma">text</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> را
+	پشتیبانی می
+	کند. اما اگر
+	پاسخ "</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CMGF:(0)</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>"
+	بود، </span><span dir="ltr" style="font-family: Tahoma">SMS
+	text mode</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+	پشتیبانی
+	نمی شود.</span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span></li>
+	<li class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%"><span style="font-family: Tahoma" lang="AR-SA">خطوط 5 و6: </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CMGW</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+	دستور </span><span dir="ltr" style="font-family: Tahoma">AT command</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ی
+	است که یک </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> با
+	پیام متنی (</span><span dir="ltr" style="font-family: Tahoma">SMS text message</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>)
+	را در مخزن
+	پیام یک مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span> <span lang="AR-SA">می
+	نویسد. "</span></span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+852912345567</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>"
+	</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>,</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+	شماره ی تلفن
+	همراه
+	گیرنده ی
+	پیام است. بعد
+	از تایپ شماره
+	تلفن گیرنده
+	ی پیام، باید
+	حتما کلید </span><span dir="ltr" style="font-family: Tahoma">Enter</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> را
+	بزنید. پس از
+	آن مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+	نماد اعلان "&lt;"
+	را بر می
+	گرداند و می
+	توانید بعد
+	از این علامت
+	متن پیامتان
+	را تایپ کنید "</span><span class="maintext"><span dir="ltr" style="font-family: Tahoma">A simple demo of
+	SMS text messaging.</span></span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>". بعد
+	از اینکه متن
+	پیامتان را
+	نوشتید کلید
+	های </span><span dir="ltr" style="font-family: Tahoma">CTRL</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+	+ </span><span dir="ltr" style="font-family: Tahoma">Z</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span><span>&nbsp; </span>را
+	بزنید</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>.<o:p></o:p></span></li>
+	<li class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%"><span style="font-family: Tahoma" lang="AR-SA">خط 7: "</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CMGW:1</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>"
+	به این معنا
+	است که اندیس
+	نسبت داده
+	شده به این </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+	برابر 1 است.
+	این عدد نشان
+	دهنده ی مکان
+	این </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+	در مخزن پیام
+	مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+	است.</span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span></li>
+	<li class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%"><span style="font-family: Tahoma" lang="AR-SA">خط 9:
+	نتیجه ی
+	دستور "</span><span dir="ltr" style="font-family: Tahoma">OK</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>" است
+	که نشان می
+	دهد دستور "</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CMGW</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>"
+	با موفقیت
+	انجام شده
+	است.</span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span></li>
+	<li class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%"><span style="font-family: Tahoma" lang="AR-SA">خط 10: </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CMSS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span><span>&nbsp; </span>دستور </span><span dir="ltr" style="font-family: Tahoma">AT command</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ی
+	است که جهت
+	ارسال </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span><span>&nbsp;
+	</span>متنی از
+	مخزن پیام
+	مودم "</span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>"
+	است ."1" اندیس </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ی
+	است که از خط 7
+	به دست آمده
+	است.</span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span></li>
+	<li class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%"><span style="font-family: Tahoma" lang="AR-SA">خط 11:"</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>+CMSS:20</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>"</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma" lang="AR-SA"><span dir="ltr"></span> </span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span><span>&nbsp;</span>بیان
+	می کند: شماره
+	ی مرجعی که به </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+	نسبت داده
+	شده است، 20
+	است.</span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span></li>
+	<li class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%"><span style="font-family: Tahoma" lang="AR-SA">خط 13:
+	نتیجه ی
+	دستور، "</span><span dir="ltr" style="font-family: Tahoma">OK</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>"
+	است .به این
+	معنا که دستور
+	با موفقیت
+	اجرا شده است.</span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span></li>
+</ul>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="AR-SA"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="AR-SA">به
+منظور ارسال </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> از
+یک </span><span dir="ltr" style="font-family: Tahoma">application</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>،
+باید </span><span dir="ltr" style="font-family: Tahoma">source
+code</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> مربوط به
+اتصال و ارسال
+دستورات </span><span dir="ltr" style="font-family: Tahoma">AT command</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> به
+یک تلفن همراه
+یا مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>،
+درست مانند
+آنچه </span><span dir="ltr" style="font-family: Tahoma">Hyper
+Terminal</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> انجام می
+دهد را
+بنویسد. می
+توانید </span><span dir="ltr" style="font-family: Tahoma">source code</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> را
+در </span><span dir="ltr" style="font-family: Tahoma">C,C++,Java,Visual
+Basic,Delphi</span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span> </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span>,</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ...</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma" lang="AR-SA"><span dir="ltr"></span> </span><span style="font-family: Tahoma" lang="AR-SA">بنویسید.
+اما نوشتن این
+</span><span dir="ltr" style="font-family: Tahoma">source code</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+معایبی هم
+دارد که در
+زیر به چند
+مورد اشاره
+شده است:<o:p></o:p></span>
+</p>
+<ul style="margin-top: 0pt" type="disc">
+	<li class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%"><span style="font-family: Tahoma" lang="AR-SA">باید
+	حتما به
+	چگونگی
+	استفاده ی </span><span dir="ltr" style="font-family: Tahoma">AT command</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ها
+	آشنا باشید.</span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span></li>
+	<li class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%"><span style="font-family: Tahoma" lang="AR-SA">باید
+	چگونگی
+	تشکیل بیت و
+	بایت </span><span dir="ltr" style="font-family: Tahoma">sms</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+	را بدانید.
+	برای مثال،
+	برای تعیین اینکدینگ
+	کارکترهای </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ( اینکدینگ
+	7 بیتی یا اینکدینگ
+	</span><span dir="ltr" style="font-family: Tahoma">Unicode</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+	16 بیتی )،
+	نیازمند این
+	هستید که
+	بدانید کدام
+	بیتها در </span><span dir="ltr" style="font-family: Tahoma">header</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+	پیام باید
+	ویرایش شوند و
+	چه مقداری به
+	آنها اختصاص
+	داده شود.</span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span></li>
+</ul>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="AR-SA">دربیشتر
+موارد، به جای
+نوشتن </span><span dir="ltr" style="font-family: Tahoma">AT command</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ها به
+منظور تعامل و
+ارتباط با
+تلفن همراه یا
+مودم </span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>،
+راه حل بهتر
+استفاده از </span><span dir="ltr" style="font-family: Tahoma">SMS messaging API(Application programming
+interface)</span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span> </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span><span>&nbsp;</span></span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><span dir="ltr" style="font-family: Tahoma">SDK(software development kit)</span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span> </span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma"><span dir="ltr"></span><span>&nbsp;</span>library/</span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span> <span lang="AR-SA">سطح
+بالا است. </span></span><span dir="ltr" style="font-family: Tahoma">API/SDK/library</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+جزئیات سطح
+پایین را
+پنهان می
+کنند. بنابراین،
+برنامه نویس</span><span dir="ltr" style="font-family: Tahoma">SMS application </span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span><span>&nbsp;</span>نیازی
+به شناخت </span><span dir="ltr" style="font-family: Tahoma">AT command</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ها و
+ساختار سطح
+بیتی </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+ندارد. بعضی
+از </span><span dir="ltr" style="font-family: Tahoma">API</span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span> </span><span style="font-family: Tahoma" lang="AR-SA">ها،
+</span><span dir="ltr" style="font-family: Tahoma">SDK</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ها
+وکتابخانه ها
+علاوه بر </span><span dir="ltr" style="font-family: Tahoma">AT command</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> ها،
+پروتکل های </span><span dir="ltr" style="font-family: Tahoma">SMSC</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> را
+نیز پشتیبانی
+می کنند. به
+منظور تغییر
+از یک<span>&nbsp; </span></span><span dir="ltr" style="font-family: Tahoma">solution</span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span> </span><span dir="ltr" style="font-family: Tahoma">SMS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+مبتنی بر مودم
+بیسیم به یک </span><span dir="ltr" style="font-family: Tahoma">SMS solution</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>
+مبتنی بر </span><span dir="ltr" style="font-family: Tahoma">SMSC</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> تنها
+لازم است که
+یک "فایل
+پیکربندی"/"فایل
+خصوصیات" را
+ویرایش کنید و
+یا تغییرات
+اندکی در سورس
+</span><span dir="ltr" style="font-family: Tahoma">SMS application</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span><span>&nbsp; </span>انجام
+دهید.<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="AR-SA"><o:p>&nbsp;</o:p></span>
+</p>
+<br>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="AR-SA"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<b><span style="font-family: Tahoma" lang="FA">چگونگی
+استفاده از </span></b><b><span dir="ltr" style="font-family: Tahoma">AT COMMAND</span></b><span dir="rtl"></span><b><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> در </span></b><b><span dir="ltr" style="font-family: Tahoma">C#</span></b><span dir="rtl"></span><b><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span> <o:p></o:p></span></b>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="FA">در
+ابتدا ما باید
+فضای نام </span><i><span dir="ltr" style="font-family: Tahoma; color: blue">using</span></i><i><span dir="ltr" style="font-family: Tahoma"> System.IO.Ports;</span></i><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span> به پروژه
+اضافه کنیم . <o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="AR-SA">از
+این به بعد
+تمامی کار ما
+به صورت کار
+کردن با پورت
+ها می باشد .<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="AR-SA">از آن
+جایی که با
+خرید هر مودم
+دفترچه
+راهنمایی
+مبنی بر
+پشتیبانی آن
+مودم از </span><span dir="ltr" style="font-family: Tahoma">AT Command </span><span dir="rtl"></span><span style="font-family: Tahoma"><span dir="rtl"></span><span>&nbsp;</span></span><span style="font-family: Tahoma" lang="FA">های خاص
+آن مودم نیز
+داده می شود
+پس هنگام استفاده
+و نوشتن این
+دستورات روی
+پورت حتما مطمئن
+شوید که مودم
+مورد نظر از
+این دستورات
+پشتیبانی
+خواهد کرد. <o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="FA">برای
+کار با پورت
+ها متغیری
+همانند زیر به
+صورت سراسری
+تعریف می کنیم
+:<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma; color: teal">SerialPort</span><span style="font-family: Tahoma"> comPort = <span style="color: blue">new</span> <span style="color: teal">SerialPort</span>();</span><span style="font-family: Tahoma"><o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify; line-height: 150%">
+<span style="font-family: Tahoma" lang="FA">در
+سازنده کلاس تنظیمات
+ابتدایی برای
+کار با مودم
+تنظیم می شود:<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span dir="ltr"></span><span style="font-family: Tahoma"><span dir="ltr"></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: green">//COM
+SETTING<o:p></o:p></span></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.PortName =
+"COM1";<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.BaudRate = 115200;<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.Parity = <span style="color: teal">Parity</span>.None;<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.StopBits = <span style="color: teal">StopBits</span>.One;<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.DataBits = 8;<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.ReadBufferSize = 10000;<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.ReadTimeout = 1000;<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.WriteBufferSize = 10000;<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;
+</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>comPort.WriteTimeout =
+10000;<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.RtsEnable = <span style="color: blue">true</span>;</span><span style="font-family: Tahoma"><o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; line-height: 150%; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA">ارسال<span>&nbsp; </span>پیام
+کوتاه :<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span dir="ltr"></span><span style="font-family: Tahoma"><span dir="ltr"></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: green">//<span>&nbsp; </span>AT+CMGS<span>&nbsp;&nbsp;&nbsp;
+</span>--- To Send Message<o:p></o:p></span></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: blue">private</span>
+<span style="color: blue">void</span> sendSms()<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: blue">if</span>
+(!comPort.IsOpen)<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.Open();<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span>&nbsp;&nbsp;&nbsp;</span>comPort.DiscardInBuffer();<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.DiscardOutBuffer();<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: green">//Exam : <o:p></o:p></span></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: green">//AT+CMGS="09353659299"<o:p></o:p></span></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: green">//message
+text<o:p></o:p></span></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: green">//Ctrl+Z
+: Char.ConvertFromUtf32(26)<o:p></o:p></span></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: green">//Enter :
+(char)13<o:p></o:p></span></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>atCommandStr = <span style="color: maroon">"AT+CMGS="</span> + <span style="color: teal">Char</span>.ConvertFromUtf32(34)
++ phoneTXT.Text<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>+ <span style="color: teal">Char</span>.ConvertFromUtf32(34)
++ (<span style="color: blue">char</span>)13 + messageTXT.Text<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>+ <span style="color: teal">Char</span>.ConvertFromUtf32(26);<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.WriteLine(atCommandStr + (<span style="color: blue">char</span>)13);<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: green">//read
+immediately response<o:p></o:p></span></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>messageTXT.Text =
+comPort.ReadExisting();<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.Close();<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}</span><span style="font-family: Tahoma"><o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<b><span style="font-family: Tahoma"><o:p>&nbsp;</o:p></span></b>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<b><span style="font-family: Tahoma" lang="FA">خواندن
+پیام کوتاه :<o:p></o:p></span></b>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA">نکته
+قابل توجه در
+این بخش حافظه
+سیم کارت می باشد،
+با توجه به
+اینکه سیم
+کارت مثل یک
+آرایه عمل
+کرده و در
+اولین مکان
+خالی پیام
+دریافتی قرار خواهد
+گرفت. بعد از
+خواندن پیام
+نیز حتما باید
+آن پیام پاک
+شود تا فضا
+برای دریافت
+مابقی پیام ها
+آزاد گردد.
+معمولا حافظه
+آزاد هر سیم
+کارت به
+اندازه 15 پیام
+می باشد :<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: green">//AT+CGMR=#<span>&nbsp; </span>--- To Read Message<o:p></o:p></span></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: blue">private</span>
+<span style="color: blue">void</span> readSms()<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: blue">if</span>
+(!comPort.IsOpen)<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.Open();<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: blue">string</span>
+s = <span style="color: blue">string</span>.Empty;<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>unreadMessage.Clear();<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: blue">for</span>
+(<span style="color: blue">int</span> i = 1; i &lt;= 15; i++)<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>atCommandStr = <span style="color: maroon">"AT+CMGR="</span>;<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.DiscardInBuffer();<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.DiscardOutBuffer();<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.Write(atCommandStr +
+i.ToString() + (<span style="color: blue">char</span>)13);<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>s = comPort.ReadExisting();<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: blue">if</span>
+(s.Contains(<span style="color: maroon">"REC UNREAD"</span>))<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>unreadMessage.Add(s);<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>deleteMessage(i);<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>inboxTXT.Clear();<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: blue">for</span>
+(<span style="color: blue">int</span> i = 0; i &lt; unreadMessage.Count; i++)<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>inboxTXT.Text += unreadMessage[i].ToString()
++ <span style="color: maroon">"\n"</span>;<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.Close();<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: blue">private</span>
+<span style="color: blue">void</span> deleteMessage(<span style="color: blue">int</span>
+index)<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>{<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color: blue">if</span>
+(!comPort.IsOpen)<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.Open();<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.DiscardOutBuffer();<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>atCommandStr = <span style="color: maroon">"AT+CMGD="</span>
++ index.ToString();<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>comPort.WriteLine(atCommandStr + (<span style="color: blue">char</span>)13);<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="ltr" style="text-align: justify; direction: ltr; unicode-bidi: embed">
+<span style="font-family: Tahoma"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>}</span><span style="font-family: Tahoma"><o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<b><span style="font-family: Tahoma" lang="FA">خلاصه
+:<o:p></o:p></span></b>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA">همانطور
+که نشان داده
+شد، مهمترین
+قسمت کار برای
+ارسال و
+دریافت </span><span dir="ltr" style="font-family: Tahoma">sms</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>
+از طریق </span><span style="font-family: Tahoma" lang="AR-SA">یک تلفن
+همراه یا مودم
+</span><span dir="ltr" style="font-family: Tahoma">GSM/GPRS</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="AR-SA"><span dir="rtl"></span>،</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma" lang="AR-SA"><span dir="ltr"></span> </span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span><span>&nbsp;</span>شناخت
+هر چه بهتر
+دستورات "</span><span dir="ltr" style="font-family: Tahoma">AT Command</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>"
+است. در این
+مقاله ما تنها
+به بررسی دو
+مورد از این
+مجموعه
+دستورات وسیع
+"</span><span dir="ltr" style="font-family: Tahoma">AT
+Command</span><span dir="rtl"></span><span style="font-family: Tahoma" lang="FA"><span dir="rtl"></span>"
+پرداختیم و
+بررسی مابقی
+دستورات را
+برعهده خواننده
+گذاشته شده
+است.<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA">امید
+است که
+توانسته
+باشیم قدمی هر
+چند کوچک در
+جهت بالا بردن
+سطح دانش شما</span><span dir="ltr"></span><span dir="ltr" style="font-family: Tahoma" lang="FA"><span dir="ltr"></span> </span><span style="font-family: Tahoma" lang="FA">عزیزان
+برداشته
+باشیم.<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<span style="font-family: Tahoma" lang="FA"><o:p>&nbsp;</o:p></span><br>
+<b><span dir="ltr" style="font-size: 14pt; font-family: Tahoma"><o:p>&nbsp;</o:p></span></b>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: justify">
+<b><span style="font-family: Tahoma" lang="FA">منابع
+و مآخذ :</span></b><b><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span></b>
+</p>
+<br>
+<ul style="margin-top: 0pt" type="disc">
+	<li class="MsoNormal" dir="rtl" style="text-align: justify"><span style="font-family: Tahoma"><a href="http://www.developershome.com/sms/howToSendSMSFromPC.asp"><span dir="ltr">http://www.developershome.com/sms/howToSendSMSFromPC.asp</span></a></span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span></li>
+	<li class="MsoNormal" dir="rtl" style="text-align: justify"><span style="font-family: Tahoma"><a href="http://www.developershome.com/sms/howToReceiveSMSUsingPC.asp"><span dir="ltr">http://www.developershome.com/sms/howToReceiveSMSUsingPC.asp</span></a></span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span></li>
+	<li class="MsoNormal" dir="rtl" style="text-align: justify"><span style="font-family: Tahoma"><a href="http://www.codeproject.com/dotnet/Sending_SMS_using_Net.asp?print=true"><span dir="ltr">http://www.codeproject.com/dotnet/Sending_SMS_using_Net.asp?print=true</span></a></span><span dir="ltr" style="font-family: Tahoma"><o:p></o:p></span></li>
+</ul>
+<p class="MsoNormal" dir="ltr" style="margin-left: 18pt; text-align: left; direction: ltr; unicode-bidi: embed">
+<span dir="rtl" style="font-family: Tahoma" lang="FA"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: left" align="right">
+<span style="font-family: Tahoma" lang="FA"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: left" align="right">
+<span style="font-family: Tahoma" lang="FA"><o:p>&nbsp;</o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: left" align="right">
+<span style="font-family: Tahoma" lang="FA">شاد و
+موفق باشید<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="text-align: left" align="right">
+<span style="font-family: Tahoma" lang="FA">پاییز
+86<o:p></o:p></span>
+</p>
+<p class="MsoNormal" dir="rtl" style="margin-right: 18pt">
+<span dir="ltr" style="font-family: Tahoma"><o:p>&nbsp;</o:p></span>
+</p>
+</div>
+
+
+			</td>
+		</tr>
+				</tbody></table>
+
+		<span class="article_seperator">&nbsp;</span>
+
+														<table border="0" cellpadding="0" cellspacing="0" width="100%">
+							<tbody><tr>
+																												</tr>
+						</tbody></table>
+													<div id="bottomAdv">		<div class="moduletable">
+			<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://macromedia.com/cabs/swflash.cab#version=6,0,0,0" id="flaMovie" height="60" width="468">
+	<param name="movie" value="images/banners/parsian.swf">
+	
+	<param name="FlashVars" value="url=http%3A%2F%2Fanetwork.ir%2Fshowad%2Fc.php%3Fv%3D55223302%26ts%3D1338494967">
+	
+	<param name="quality" value="medium">
+	
+	<param name="bgcolor" value="#FFFFFF">
+	
+	<param name="WMode" value="transparent">
+	
+	<embed src="images/banners/parsian.swf" wmode="transparent" flashvars="url=http%3A%2F%2Fanetwork.ir%2Fshowad%2Fc.php%3Fv%3D55223302%26ts%3D1338494967" bgcolor="#FFFFFF" type="application/x-shockwave-flash" height="60" width="468">
+</object>
+		</div>
+		</div>
+												</td>
+												<td id="sideLeft">
+							<div class="sidebar">
+								<div class="sidebarHead"></div>
+										<div class="module">
+			<div>
+				<div>
+					<div>
+						<h3>آمار سایت</h3><strong>اعضاء:</strong> 43800<br>
+<strong>تعداد مقالات:</strong> 25005<br>
+<strong>لينكها:</strong> 177<br>
+					</div>
+				</div>
+			</div>
+		</div>
+				<div class="module">
+			<div>
+				<div>
+					<div>
+						 2 ميهمان 					</div>
+				</div>
+			</div>
+		</div>
+				<div class="module">
+			<div>
+				<div>
+					<div>
+						<h3>پراکندگی جغرافیایی کاربران</h3><a href="http://www4.clustrmaps.com/counter/maps.php?url=http://hamkelasy.com" id="clustrMapsLink"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/index2.php" style="border:0px;" alt="Locations of visitors to this page" title="Locations of visitors to this page" id="clustrMapsImg" onerror="this.onerror=null; this.src=&#39;http://www2.clustrmaps.com/images/clustrmaps-back-soon.jpg&#39;; document.getElementById(&#39;clustrMapsLink&#39;).href=&#39;http://www2.clustrmaps.com&#39;;">
+</a>
+					</div>
+				</div>
+			</div>
+		</div>
+				<div class="module">
+			<div>
+				<div>
+					<div>
+						<h3>امکانات جدید سایت</h3>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tbody><tr align="left"><td><a href="http://www.hamkelasy.com/component/option,com_hamticle/Itemid,92/" class="mainlevel">ارسال مقاله برای همکلاسی</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/section/5/72/" class="mainlevel">منابع کارشناسی ارشد - دروس و ضرایب</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/10/79/146/" class="mainlevel">منابع کارشناسی ارشد - منابع مطالعاتی</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/component/option,com_weblinks/catid,45/Itemid,67/" class="mainlevel">تبادل لینک</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/view/319/71/" class="mainlevel">تبلیغات در پایگاه همکلاسی</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/view/637/73/" class="mainlevel">آدرس وب سایت دانشگاه‌های ایران</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/component/option,com_mirhemlinky/Itemid,117/" class="mainlevel">دوستان همکلاسی</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/7/85/155/" class="mainlevel">اطلاع رسانی کنفرانس‌ها</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/category/8/86/156/" class="mainlevel">مقالات تبلیغاتی</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/blogsection/11/158/" class="mainlevel">پیام نور</a></td></tr>
+<tr align="left"><td><a href="http://www.hamkelasy.com/content/view/40596/161/" class="mainlevel">پنل رایگان SMS</a></td></tr>
+</tbody></table>					</div>
+				</div>
+			</div>
+		</div>
+				<div class="module">
+			<div>
+				<div>
+					<div>
+						<h3>تبلیغات</h3><p align="center" style="text-align: center">
+<a href="http://shirkhargah.ir/" target="_blank" title="شیرخوارگاه علی اصغر ">شیرخوارگاه و خانه فرزندان<br>
+&nbsp;حضرت علی اصغر&nbsp;</a>
+</p>
+<p align="center" style="text-align: center">
+<a href="http://themez.ir/" target="_blank" title="طراحی قالب">کارگاه طراحی قالب</a> &nbsp;
+</p>
+<div style="text-align: center">
+<a href="http://www.freedanload.com/" target="_blank" title="فری دانلود">فری دانلود&nbsp;مرکز دانلود رایگان نرم افزار</a> &nbsp; &nbsp;
+</div>
+<p align="center" style="text-align: center">
+<a href="http://www.kahkeshan.com/Network/" title="آموزش شبکه" target="_blank">آموزش شبکه</a> 
+</p>
+<p align="center" style="text-align: center">
+<a href="http://www.kahkeshan.com/" title="دوره مایکروسافت و سیسکو" target="_blank">دوره مایکروسافت و سیسکو</a> &nbsp;
+</p>
+<p align="center" style="text-align: center">
+<a href="http://www.parsianshop.com/" target="_blank" title="خرید اینترنتی">فروشگاه پارسیان</a>
+</p>
+<p align="center" style="text-align: center">
+<a href="http://gonabad20.ir/" target="_blank">اخبارگناباد</a> 
+</p>
+<p align="center" style="text-align: center">
+<span class="t9 "><a href="http://parsianshop.com/" target="_blank" title="بدلیجات مارک دار">بدلیجات مارک دار</a></span>
+</p>
+<p align="center" style="text-align: center">
+<a href="http://www.irangan.com/" title="آگهی" target="_blank">آگهی</a>
+</p>
+<p align="center" style="text-align: center">
+<a href="http://gonabad20.ir/" target="_blank" title="اخبار گناباد">گناباد </a>
+</p>
+<p align="center" style="text-align: center">
+<a href="http://parsianshop.com/" target="_blank" title="خرید اینترنتی">خرید اینترنتی</a> 
+</p>
+<p align="center" style="text-align: center">
+<a href="http://parsianshop.com/" target="_blank" title="خرید زیورآلات">زیورآلات</a>
+</p>
+<p align="center" style="text-align: center">
+<a href="http://parsianshop.com/" target="_blank">بدلیجات</a>
+</p>
+<p align="center" style="text-align: center">
+<a href="http://www.bbk-iran.com/requests.php" title="خرید و فروش محصولات کشاورزی" target="_blank">خرید و فروش محصولات کشاورزی</a> &nbsp;
+</p>
+<p align="center" style="text-align: center">
+<a href="http://kianetesalgharb.com/" title="لوله پلی اتیلن" target="_blank">لوله پلی اتیلن &nbsp;</a>
+</p>
+<p align="center" style="text-align: center">
+<a href="http://www.irangan.com/System/Adv/Cat-46/Adv-58.aspx" target="_blank" title="مبل">مبل&nbsp;</a>
+</p>
+<p align="center" style="text-align: center">
+<a href="http://www.poly-ethylene.com/" target="_blank" title="لوله پلی اتیلن">لوله پلی اتیلن&nbsp;</a>
+</p>
+<p align="center" style="text-align: center">
+<a href="http://deghatshop2.blogfa.com/" title="بلبرینگ" target="_blank">
+بلبرینگ  </a> 
+</p>
+<p align="center" style="text-align: center">
+<a href="http://www.paeezabpipe.com/index.php/%D9%BE%D9%88%D8%B4-%D9%81%DB%8C%D8%AA/%D9%BE%D9%88%D8%B4-%D9%81%DB%8C%D8%AA-%D8%B3%D8%A7%DB%8C%D9%84%D9%86%D8%AA" title="پوش فیت" target="_blank">پوش فیت</a>
+</p>
+<p align="center" style="text-align: center">
+<a href="http://www.shiralatsanat.com/" target="_blank" title="شیرآلات و اتصالات گازی">شیرآلات و اتصالات گازی&nbsp;</a>
+</p>
+<p align="center" style="text-align: center">
+<a href="http://www.tehrancooler.com/" target="_blank" title="دستگاه تصفیه آب و کولرگازی">دستگاه تصفیه آب و کولرگازی&nbsp;</a>
+</p>
+<p align="center" style="text-align: center">
+<a href="http://www.tspanahi.com/index.php/%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA/%DA%AF%DB%8C%D8%B1%D8%A8%DA%A9%D8%B3-%D8%AD%D9%84%D8%B2%D9%88%D9%86%DB%8C" target="_blank" title="گیربکس حلزونی">گیربکس حلزونی&nbsp;</a> 
+</p>
+<p align="center" style="text-align: center">
+<a href="http://divarchini.com/" target="_blank" title="دیوارچینی"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/divarchini.jpg" width="128" height="128" alt="دیوارچینی" title="دیوارچینی" style="margin: 5px; width: 128px; height: 128px"></a>  
+</p>
+<p align="center" style="text-align: center">
+&nbsp;
+<a href="http://parsianshop.com/" target="_blank" title="فروشگاه پارسیان: خرید اینترنتی و پستی زیورآلات بدلیجات"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/banner106.gif" width="120" height="240" align="middle" alt="خرید اینترنتی زیورآلات - بدلیجات خرید پستی" title="فروشگاه پارسیان: زیورآلات و بدلیجات" style="margin: 5px; width: 120px; height: 240px"></a>
+</p>
+<div style="text-align: center">
+</div>
+<div align="center" style="text-align: center">
+<br>
+</div>
+<div align="center">
+</div>
+					</div>
+				</div>
+			</div>
+		</div>
+				<div class="module">
+			<div>
+				<div>
+					<div>
+						<h3>RSS مقالات</h3><div align="center">
+<table border="0">
+	<tbody>
+		<tr align="center">
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/component/optioncom_rd_rss/id2?format=xml" target="_blank">کامپیوتر و IT</a> </td>
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/component/optioncom_rd_rss/id5?format=xml" target="_blank">کنفرانس کامپیوتر</a><br>
+			</td>
+		</tr>
+		<tr>
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/component/optioncom_rd_rss/id3?format=xml" target="_blank">&nbsp;عمران</a> </td>
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/component/optioncom_rd_rss/id6?format=xml" target="_blank">معماری </a> <br>
+			</td>
+		</tr>
+		<tr>
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/component/optioncom_rd_rss/id4?format=xml" target="_blank">شهرسازی&nbsp;</a> </td>
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/component/optioncom_rd_rss/id7?format=xml" target="_blank">مکانیک&nbsp;</a> </td>
+		</tr>
+		<tr>
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/component/optioncom_rd_rss/id8?format=xml" target="_blank">برق و الکترونیک</a> <br>
+			</td>
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/component/optioncom_rd_rss/id9?format=xml" target="_blank">طراحی صنعتی</a> <br>
+			</td>
+		</tr>
+		<tr>
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/indexphpoptioncom_rd_rssid20?format=xml" target="_blank">مهندسی پزشکی</a> <br>
+			</td>
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/indexphpoptioncom_rd_rssid21?format=xml" target="_blank">جغرافیا</a> <br>
+			</td>
+		</tr>
+		<tr>
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/component/optioncom_rd_rss/id10?format=xml" target="_blank">فناوری نوین</a> <br>
+			</td>
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/component/optioncom_rd_rss/id11?format=xml" target="_blank">پزشکی</a> </td>
+		</tr>
+		<tr>
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/component/optioncom_rd_rss/id12?format=xml" target="_blank">مامایی</a> <br>
+			</td>
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/component/optioncom_rd_rss/id13?format=xml" target="_blank">ادبیات</a> <br>
+			</td>
+		</tr>
+		<tr>
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/component/optioncom_rd_rss/id14?format=xml" target="_blank">موسیقی</a> </td>
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/component/optioncom_rd_rss/id15?format=xml" target="_blank">اختر شناسی</a> <br>
+			</td>
+		</tr>
+		<tr>
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/component/optioncom_rd_rss/id16?format=xml" target="_blank">نمونه سوالات</a> <br>
+			</td>
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/component/optioncom_rd_rss/id17?format=xml" target="_blank">معرفی رشته</a> </td>
+		</tr>
+		<tr>
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/component/optioncom_rd_rss/id18?format=xml" target="_blank">زندگی نامه ها</a> <br>
+			</td>
+			<td align="center"><img src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/feed-icon-12x12.gif" alt=" " height="12" width="12"></td>
+			<td valign="top" align="right"><a href="http://feeds2.feedburner.com/http/wwwhamkelasycom/component/optioncom_rd_rss/id19?format=xml" target="_blank">مطالب کوتاه</a> </td>
+		</tr>
+	</tbody>
+</table>
+</div>
+<div align="center">
+&nbsp;
+</div>
+<div align="center">
+&nbsp;<a href="http://www.hamkelasy.com/content/view/1046/42/">راهنمای RSS را مطالعه کنید </a> ...<br>
+</div>
+					</div>
+				</div>
+			</div>
+		</div>
+									</div>
+							<div class="sidebarFoot"></div>
+						</td>
+											</tr>
+				</tbody></table>
+				<div id="footerHolder">
+													<hr width="60%" align="center">
+
+			  <div align="center">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/"><img alt="Creative Commons License" style="border-width:0" src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/80x15.png"></a><br>کلیه مقالات پایگاه علمی همکلاسی تحت مجوز <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-Noncommercial-Share Alike 3.0 Unported License</a> منتشر می‌گردد.			
+
+<br>
+<!-- PersianStat -->
+<!-- URL: http://www.hamkelasy.com -->
+<script language="JavaScript" type="text/javascript" src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/stat.js"></script>
+<script language="JavaScript" type="text/javascript">
+persianstat(10003832, 0);
+</script><iframe src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/Stats.htm" height="16" width="16" scrolling="no" marginwidth="0" allowtransparency="true" frameborder="no" marginheight="0" name="PersianStat"></iframe>
+<!-- /PersianStat -->
+
+<!-- google Analytic -->
+<script src="./پایگاه علمی همکلاسی - کار با GSM مودم برای ارسال و دریافت SMS با استفاده از زبان برنامه نویسی #C_files/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-350821-1";
+urchinTracker();
+</script>
+<!-- google Analytic -->												<br>
+						Template Designed by : <a href="http://themez.ir/" target="_blank" title="مركز تخصصي طراحي و اجراي قالبهاي جوملا">Template Design Workshop</a>
+				</div>
+				<div style="font-size:1px; color:#fff; height:1px; overflow:hidden; cursor:default;">
+					Template name : <b>Hamkelasy Template</b><br>
+					Designed by : <a href="http://skin.pictofx.com/" title="Template Design Workshop" target="_blank">Template Design Workshop</a><br>
+					<p><a href="http://skin.pictofx.com/" title="Site and Blog Templates">Template Design Workshop</a> offers professional web templates, flash templates and other web design products available for immediate download.</p>
+					<a href="http://pictofx.com/" title="PictoFX Multimedia Design Group">PictoFX Multimedia Design Group</a> 
+					<a href="http://medium.ir/" title="Medium Blog">Medium Blog</a> 
+					<a href="http://skin.pictofx.com/skin.do" title="Free site and blog templates" target="_blank">Template Design Workshop</a><br>
+					<a href="http://technorati.com/tag/pictofxt" rel="tag">pictofxt</a>
+					<a href="http://technorati.com/blogs/pictofxt" rel="tag directory">pictofxt</a>
+				</div>
+			</div></td>
+			<td id="TDR"><div id="TDRpic"></div></td>
+			<td id="TDRR">&nbsp;</td>
+		</tr>
+	</tbody></table>
+
+</body></html>
