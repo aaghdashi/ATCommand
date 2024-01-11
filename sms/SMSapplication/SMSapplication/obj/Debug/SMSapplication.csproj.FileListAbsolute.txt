@@ -1,8 +1,0 @@
-C:\Users\arman'\Desktop\sms\SMSapplication\SMSapplication\bin\Debug\SMSapplication.exe
-C:\Users\arman'\Desktop\sms\SMSapplication\SMSapplication\bin\Debug\SMSapplication.pdb
-C:\Users\arman'\Desktop\sms\SMSapplication\SMSapplication\obj\Debug\SMSapplication.csprojResolveAssemblyReference.cache
-C:\Users\arman'\Desktop\sms\SMSapplication\SMSapplication\obj\Debug\SMSapplication.SMSapplication.resources
-C:\Users\arman'\Desktop\sms\SMSapplication\SMSapplication\obj\Debug\SMSapplication.Properties.Resources.resources
-C:\Users\arman'\Desktop\sms\SMSapplication\SMSapplication\obj\Debug\SMSapplication.csproj.GenerateResource.Cache
-C:\Users\arman'\Desktop\sms\SMSapplication\SMSapplication\obj\Debug\SMSapplication.exe
-C:\Users\arman'\Desktop\sms\SMSapplication\SMSapplication\obj\Debug\SMSapplication.pdb
